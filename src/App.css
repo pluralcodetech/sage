@@ -1,38 +1,463 @@
-.App {
-  text-align: center;
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(./font/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: Gilroy-semibold;
+  src: url(./font/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: Gilroy-regularItalic;
+  src: url(./font/Gilroy-RegularItalic.ttf);
+
+}
+@font-face {
+  font-family: Gilroy-bold;
+  src: url(./font/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(./font/Gilroy-Regular.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row{
+  margin: 0 !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: Gilroy-semibold;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
+  background-color: #FFFDFA;
+}
+.nav-container{
+  width: 100%;
+}
+.navlogo{
+  width: 20%;
+}
+.list-container{
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+.navlist{
+  width: 70%;
+  display: flex;
+}
+.navlist a{
+  text-decoration: none;
+  color: #232323;
+  font-family: Gilroy-Medium;
+}
+
+.viewbtn{
+  width: 25%;
+}
+a{
+  text-decoration: none;
+}
+
+.logBtn{
+  width: 120px;
+  border: 1px solid #9B0000;
+  color: #9B0000;
+}
+.moduletext{
+  font-family: Gilroy regular;
+}
+.logBtn:hover{
+  background-color: #9B0000;
+  color: #FFFFFF;
+}
+.signBtn{
+  width: 120px;
+  background-color: #9B0000;
+  color: #fff;
+}
+.signBtn:hover{
+  color: #9B0000;
+  border: 1px solid #9B0000;
+}
+.red{
+  color: #9B0000;
+}
+.header-maintext{
+  width: 100%;
+  color: #011F5B;
+  font-family: Gilroy-bold;
+  font-size: 60px;
+}
+.global{
+  color: #9B0000;
+}
+.header-text{
+  width: 65%;
+  color: #232323;
+}
+.header-logo{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-family:Gilory-regularItalic ;
+}
+.header-logomba{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap:10px;
+  /* justify-content: space-between; */
+}
+.header-logomba-two{
+  font-family:Gilory-regularItalic ;
+
+}
+.header-btn{
+  background-color: #9B0000;
+  width: 50%;
+  color: #fff;
+}
+.header-btn:hover{
+  border: 1px solid #9B0000;
+  color: #9B0000;
+}
+.second-img{
+  width: 65%;
+}
+.training{
+  width: 100%;
+  background: rgb(1, 31, 91, 0.04);
+}
+.training h5{
+  color: #232323;
+}
+
+.training-box{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow:0px 0px 16px rgba(0, 0, 0, 0.16);
+}
+.training-text{
+  font-family: Gilroy-Regular;
+}
+.training-logo{
+  width: 100%;
+}
+.who-box{
+  width: 297px;
+  height: 241px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  text-align: center;
+  color: #4E4E4E;
+}
+.who-text{
+  width: 95%;
+  /* margin: auto; */
+font-family: 'Gilroy-Regular';
+}
+.cert-box{
+  width: 300px;
+/* height: 431px; */
+background: #FFFFFF;
+box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+border-radius: 24px 0px;
+}
+.cert-box h5{
+  font-size: 18px;
+}
+.cert-text{
+  font-size: 13.5px;
+}
+.view{
+  text-decoration: none;
+  color: #9B0000;
+}
+.why-logo{
+  width: 73%;
+  border-radius: 24px;
+  background-color: #232323;
+  color: #FFFFFF;
+}
+.why-logo-img{
+  width: 100%;
+  border-radius: 24px;
+}
+.why-second{
+  background-color: #011F5B;
+  color: #FFFFFF;
+  border-radius: 24px;
+}
+.why-text{
+  font-family: Gilroy-Regular;
+}
+.why-color2{
+height: 350px;
+  background-color: #9B0000;
+}
+.why-color3{
+  background-color: #544848;
+}
+.say{
+  width: 100%;
+}
+.say2{
+  width: 35%;
+}
+.quote{
+  width: 25px;
+}
+.butgroup{
+  width: 20%;
+  border: 1px solid #9B0000;
+  color: #9B0000;
+  font-size: 18px;
+}
+.saylogo{
+  width: 40%;
+}
+.saylogoimg{
+  width: 75%;
+}
+.say-text{
+  width: 50%;
+}
+.std{
+  color: #011F5B;
+}
+
+#stdname{
+  font-family: Gilroy-bold !important;
+  color: #011F5B;
+}
+.stdtiny{
+  font-family: Gilroy-Regular !important;
+  color: #011F5B;
+}
+.std2{
+  color: #9B0000;
+}
+.wrapper{
+  width: 100%;
+  background: url("./images/afro.png");
+  /* height: 900px; */
+  position: relative;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper.vid{
+  width: 100%;
+  background-color: #FFFFFF;
+  /* height: 900px; */
+  background-image: none;
+  position: relative;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ex{
+  display: none;
+}
+
+
+.play{
+  width: 5%;
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  /* display: none; */
+}
+.mbacol{
+  color: #232323;
+  font-family: Gilroy-Medium;
+}
+.mbalogo{
+  width: 90%;
+}
+.case-text{
+  width: 65%;
+  font-family: Gilroy-Medium ;
+  color: #232323;
+}
+.case-mainlogo{
+  width: 80%;
+ 
+}
+.case-logo{
+  width: 20%;
+  padding: 0 2rem;
+  display: inline-flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.faq{
+  background-color: #FCFCFE;
+  box-shadow: 0px 1.77394px 2.6609px -0.443484px rgba(16, 24, 40, 0.1), 0px 0.886968px 1.77394px -0.886968px rgba(16, 24, 40, 0.1);
+border-radius: 24px 24px 0px 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.faqlist{
+  cursor: pointer;
+  font-family: Gilroy-Regular;
+}
+.faqh2{
+  color: #9B0000;
+  font-family: Gilroy-bold;
+}
+.faqthick{
+  font-family: Gilroy-semibold;
+  font-size: 18px;
+}
+.faqlight{
+  font-size: 18px;
+}
+.inptcont{
+  width: 37%;
+}
+.inpt{
+  outline: none;
+}
+.elip{
+  width: 30px;
+  padding-right: 10px;
+}
+.faq-card-qst{
+  color: #011F5B;
+  font-family: Gilroy-bold;
+}
+.faq-card-ans{
+  color: #232323;
+  font-family: Gilroy-Medium;
+}
+.footlogo{
+  width: 60%;
+}
+.foot-first-text{
+  width: 70%;
+  font-family: Gilroy-Medium;
+}
+.foottwo a{
+  color:#0C0C0C;
+  font-family: Gilroy-Medium;
+}
+.copyr{
+  font-size: 14px;
+  color:#0C0C0C;
+  font-family: Gilroy-Medium;
+}
+@media (max-width:997px) {
+  .navlogo{
+    width: 35%;
   }
-  to {
-    transform: rotate(360deg);
+  .footlogo{
+    width: 75%;
+  }
+  .header{
+    flex-direction: column;
+  }
+  .header-maintext{
+    font-size: 40px;
+    /* text-align: center; */
+  }
+  .header-text{
+    width: 100%;
+    color: #232323;
+  }
+  .header-logo{
+    width: 100%;
+  }
+  .header-btn{
+    width: 100%;
+  }
+  .header-logomba{
+    width: 100%;
+    
+    /* justify-content: space-between; */
+  }
+  .second-img{
+    width: 100%;
+  }
+  .cert-box{
+    width: 100%
+  }
+  .cert-box h5{
+    font-size: 18px;
+  }
+  .cert-text{
+    font-size: 13.5px;
+  }
+  .viewbtn{
+    width:100%;
+  }
+  .who-box{
+    width: 100%;
+  }
+  .who-text{
+    width: 100%;
+  }
+  .play{
+    width: 15%;
+  }
+  .list-container{
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .why-logo{
+    width: 100%;
+    border-radius: 24px;
+    background-color: #232323;
+    color: #FFFFFF;
+  }
+  .say{
+    width: 100%;
+  }
+  .say2{
+    width: 100%;
+  }
+  .quote{
+    width: 20px;
+  }
+  .butgroup{
+    width: 30%;
+  }
+  .saylogo{
+    width: 100%;
+  }
+  .saylogoimg{
+    width: 100%;
+  }
+  .say-text{
+    width: 100%;
+  }
+  .mbalogo{
+    width: 100%;
+  }
+  .case-text{
+    width: 100%;
+  }
+  .case-mainlogo{
+    width: 100%; 
+  }
+  .case-logo{
+    width: 40%;
+  }
+  .inptcont{
+    width: 80%;
+  }
+  .faqtitle{
+    width: 80%;
+    margin: auto;
+  }
+  .foot-first-text{
+    width: 100%;
+    font-family: Gilroy-Medium;
+  }
+  .footw{
+  width: 40%;
   }
 }
