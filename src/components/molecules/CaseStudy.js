@@ -49,9 +49,10 @@ const CaseStudy = () => {
   }, [inView])
   return (
     <div className="training p-4 p-lg-5">
-      <h2 className="text-center text-black">Real-World Case Studies</h2>
+      <h2 className="text-center text-black" data-aos="zoom-in-up" data-aos-duration="2000">Real-World Case Studies</h2>
       <Text
         className="case-text m-auto text-justify text-lg-center"
+        data-aos="zoom-in-up" data-aos-duration="2000"
         children="Success leaves clues, and so our courses allow you to learn from the most successful companies, their highs and lows and apply those lessons to the subject matter and to your own profession or business."
       />
       <div className="case-mainlogo m-auto mt-5 py-5 d-flex flex-column align-items-center justify-content-center gap-5">

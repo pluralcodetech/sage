@@ -8,19 +8,16 @@ import price from "../../../images/Vector (2).png";
 import access from "../../../images/Vector (3).png";
 import headerpic from "../../../images/Group 20646.png";
 import Button from "../../atom/Button";
-import { motion } from "framer-motion";
+
 
 const HeaderM = () => {
   return (
-    <div className="header d-flex py-lg-5 flex-sm-column flex-md-column flex-lg-row items-center align-items-center">
-      <motion.div
-        initial={{ x: 0, y: 50 }}
-        animate={{ x: 0, y: 0 }}
-        transition={{ duration: 2 }}
-        className="first-part w-100"
+    <div className="header py-lg-5 row align-items-end">
+      <div data-aos="fade-up-right" data-aos-duration="2000"
+        className="first-part w-100 col"
       >
         <h1 className="header-maintext">
-          Stand Out With Sage <span className="global">Mini MBA</span>
+          Stand Out With Sage <br/><span className="global">Mini MBA</span>
         </h1>
         <Text
           className="header-text mt-2"
@@ -79,15 +76,12 @@ const HeaderM = () => {
           </div>
         </div>
         <Button className="btn header-btn py-2 mt-2" children="Enroll Now" />
-      </motion.div>
-      <motion.div
-        initial={{ x: 0, y: 50 }}
-        animate={{ x: 0, y: 0 }}
-        transition={{ duration: 2 }}
-        className="second-part w-100 py-5 py-lg-0 d-flex justify-content-center"
+      </div>
+      <div data-aos="fade-up-left" data-aos-duration="2000"
+        className="second-part w-100 py-5 py-lg-0 col d-inline-flex justify-content-center"
       >
-        <Image src={headerpic} alt="header-logo" className="second-img" />
-      </motion.div>
+        <Image src={headerpic} alt="header-logo" className="second-img imgg" />
+      </div>
     </div>
   );
 };

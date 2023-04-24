@@ -7,6 +7,7 @@ import MbaModules from "./minimba/MbaModules";
 import CaseStudy from "../molecules/CaseStudy";
 import Faq from "../molecules/Faq";
 import Footer from "../molecules/Footer";
+import Say from "../molecules/Say";
 
 const MiniM = () => {
   return (
@@ -20,6 +21,7 @@ const MiniM = () => {
       <div className="w-100 px-4 px-lg-5 py-3 box">
         <MbaModules />
       </div>
+      <Say/>
       <div className="w-100 px-4 px-lg-5 py-3 box">{/* <MBA /> */}</div>
       <CaseStudy />
       <Faq />

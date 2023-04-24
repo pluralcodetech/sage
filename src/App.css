@@ -53,7 +53,7 @@ body{
 }
 
 .viewbtn{
-  width: 25%;
+  width: 300px;
 }
 a{
   text-decoration: none;
@@ -123,7 +123,7 @@ a{
   color: #9B0000;
 }
 .second-img{
-  width: 65%;
+  width: 80%;
 }
 .training{
   width: 100%;
@@ -148,6 +148,9 @@ a{
 .who-box{
   width: 297px;
   height: 241px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 297px;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border-radius: 20px;
@@ -162,9 +165,12 @@ font-family: 'Gilroy-Regular';
 .cert-box{
   width: 300px;
 /* height: 431px; */
-background: #FFFFFF;
-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-border-radius: 24px 0px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 300px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 24px 0px;
 }
 .cert-box h5{
   font-size: 18px;
@@ -204,9 +210,6 @@ height: 350px;
 .say{
   width: 100%;
 }
-.say2{
-  width: 35%;
-}
 .quote{
   width: 25px;
 }
@@ -216,14 +219,18 @@ height: 350px;
   color: #9B0000;
   font-size: 18px;
 }
-.saylogo{
-  width: 40%;
-}
+
 .saylogoimg{
   width: 75%;
 }
+.saytext-box{
+  width: 70%;
+}
 .say-text{
   width: 50%;
+}
+.say-comment{
+  width: 60%;
 }
 .std{
   color: #011F5B;
@@ -242,27 +249,54 @@ height: 350px;
 }
 .wrapper{
   width: 100%;
-  background: url("./images/afro.png");
-  /* height: 900px; */
+  background-image: url("./images/afro.png");
+  height: 900px;
   position: relative;
-  padding-top: 56.25%;
   background-size: cover;
-  background-repeat: no-repeat;
+  /* 
+  padding-top: 56.25%;
+  background-repeat: no-repeat; */
 }
-.wrapper.vid{
+.video{
+  width: 70%;
+  /* height: 100%; */
+  margin: auto;
+  display: none;
+}
+.playimg{
+  /* z-index: 1; */
+  /* width: 20%; */
+position: absolute;
+left: 45%;
+top:42%;
+}
+.playimg img{
+  width: 75%;
+}
+/* .wrapper.vid{
   width: 100%;
   background-color: #FFFFFF;
   /* height: 900px; */
-  background-image: none;
+  /* background-image: none;
   position: relative;
   padding-top: 56.25%;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */ */
 .ex{
   display: none;
 }
-
+.react-multiple-carousel__arrow{
+  bottom: 5px;
+}
+.react-multiple-carousel__arrow--left {
+  
+  left: calc(85% + 1px) !important;
+  background-color: #9B0000 !important;
+}
+.react-multiple-carousel__arrow--right {
+  background-color: #9B0000 !important;
+}
 
 .play{
   width: 5%;
@@ -279,6 +313,7 @@ height: 350px;
 }
 .mbalogo{
   width: 90%;
+
 }
 .case-text{
   width: 65%;
@@ -305,6 +340,7 @@ border-radius: 24px 24px 0px 0px;
   font-family: Gilroy-Regular;
 }
 .faqh2{
+  font-size: 50px;
   color: #9B0000;
   font-family: Gilroy-bold;
 }
@@ -314,12 +350,6 @@ border-radius: 24px 24px 0px 0px;
 }
 .faqlight{
   font-size: 18px;
-}
-.inptcont{
-  width: 37%;
-}
-.inpt{
-  outline: none;
 }
 .elip{
   width: 30px;
@@ -349,6 +379,66 @@ border-radius: 24px 24px 0px 0px;
   color:#0C0C0C;
   font-family: Gilroy-Medium;
 }
+
+@media (min-width:1500px) {
+  .header-maintext{
+    font-size: 90px;
+  }
+  .header-text{
+    width: 55%;
+    font-size: 20px;
+  }
+  .header-logo, .header-btn, .header-logomba{
+    width: 40%;
+    font-size: 20px;
+  }
+  .header-logomba{
+    width: 60%;
+  }
+  .imgg{
+    width: 60%;
+  }
+  .who-box{margin: 0 0 3rem 0;}
+  .training h2, .cert{
+    padding: 3rem 0;
+  }
+  
+  .why-text{
+    font-size: 20px;
+  }
+  .why-color2{
+    height: 500px;
+  }
+  
+  .saytext-box{
+    width: 40%;
+  }
+  .say-text{
+    width: 50%;
+    font-size: 20px;
+  }
+  .say-comment{
+    width: 50%;
+    font-size: 20px;
+  }
+  .std{
+       padding: 0;
+  }
+  .std2{
+   padding: 0;
+  }
+  .mbacol{
+    width: 70%;
+    font-size: 20px;
+  }
+  .case-text{
+    width: 40%;
+  }
+  .case-logo{
+    width: 15%;
+  }
+}
+
 @media (max-width:997px) {
   .navlogo{
     width: 35%;
@@ -434,6 +524,13 @@ border-radius: 24px 24px 0px 0px;
   .say-text{
     width: 100%;
   }
+  .say-comment{
+    width: 100%;
+  }
+  
+  .react-multiple-carousel__arrow--left {
+    left: calc(4% + 1px) !important;
+  }
   .mbalogo{
     width: 100%;
   }
@@ -446,8 +543,8 @@ border-radius: 24px 24px 0px 0px;
   .case-logo{
     width: 40%;
   }
-  .inptcont{
-    width: 80%;
+  .faqh2{
+    font-size: 30px;
   }
   .faqtitle{
     width: 80%;

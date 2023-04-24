@@ -10,37 +10,15 @@ import viewD from "../../images/certd.png";
 import viewE from "../../images/certe.png";
 import viewF from "../../images/certf.png";
 import viewG from "../../images/certg.png";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import { useAnimation } from "framer-motion";
 
 const Certification = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.05,
-  });
-
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        opacity: 0,
-        y:0,
-        transition: { duration: 2 },
-      });
-    }
-    if(!inView){
-      animation.start({opacity:1,y: 50})
-    }
-  }, [inView]);
   return (
-    <div >
-      <h2 className="text-center py-4 py-lg-5 text-black">
+    <div className="cert" >
+      <h2 className="text-center py-4 py-lg-5 text-black" data-aos="zoom-in-up" data-aos-duration="2000">
         Certification Courses
       </h2>
-      <div  className="d-flex flex-wrap gap-3 justify-content-center">
-        <motion.div  className="cert-box p-4" ref={ref} animate={animation}>
+      <div  className="row gap-3 justify-content-center">
+        <div  className="cert-box p-4 col" data-aos="fade-right" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewA} className="training-logo" />
           </div>
@@ -56,9 +34,9 @@ const Certification = () => {
               className="view cert-text"
             />
           </div>
-        </motion.div>
-        <motion.div  className="cert-box p-4">
-          <div ref={ref} animate={animation} className="training-logo">
+        </div>
+        <div  className="cert-box p-4 col" data-aos="fade-right" data-aos-duration="2000">
+          <div  className="training-logo">
             <Image src={viewB} className="training-logo" />
           </div>
           <div className="pt-3">
@@ -73,9 +51,9 @@ const Certification = () => {
               className="view cert-text"
             />
           </div>
-        </motion.div>
-        <motion.div className="cert-box p-4">
-          <div className="training-logo" ref={ref} animate={animation}>
+        </div>
+        <div className="cert-box p-4 col" data-aos="fade-right" data-aos-duration="2000">
+          <div className="training-logo">
             <Image src={viewC} className="training-logo" />
           </div>
           <div className="pt-3">
@@ -90,8 +68,8 @@ const Certification = () => {
               className="view cert-text"
             />
           </div>
-        </motion.div>
-        <motion.div className="cert-box p-4">
+        </div>
+        <div className="cert-box p-4 col" data-aos="fade-right" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewD} className="training-logo" />
           </div>
@@ -107,8 +85,10 @@ const Certification = () => {
               className="view cert-text"
             />
           </div>
-        </motion.div>
-        <div className="cert-box p-4">
+        </div>
+        </div>
+        <div className="row justify-content-center gap-3 pt-4 pt-xxl-5">
+        <div className="col cert-box p-4" data-aos="fade-right" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewE} className="training-logo" />
           </div>
@@ -125,7 +105,7 @@ const Certification = () => {
             />
           </div>
         </div>
-        <div className="cert-box p-4">
+        <div className="col cert-box p-4" data-aos="fade-right" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewF} className="training-logo" />
           </div>
@@ -142,7 +122,7 @@ const Certification = () => {
             />
           </div>
         </div>
-        <div className="cert-box p-4">
+        <div className="cert-box p-4 col" data-aos="fade-right" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewG} className="training-logo" />
           </div>
@@ -160,7 +140,7 @@ const Certification = () => {
           </div>
         </div>
       </div>
-      <div className="viewbtn m-auto py-4">
+      <div className="viewbtn m-auto py-4 py-xxl-5">
         <Button
           className="w-100 d-flex justify-content-center btn header-btn"
           children="View all courses"

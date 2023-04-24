@@ -7,19 +7,17 @@ import online from "../../images/laptop_mac.png";
 import headerpic from "../../images/imageone.png";
 import Button from "../atom/Button";
 import TextLinks from "../atom/TextLinks";
-import { motion } from "framer-motion";
+
 
 const Header = () => {
   return (
-    <div className="header d-flex py-lg-5 flex-sm-column flex-md-column flex-lg-row items-center align-items-center">
-      <motion.div
-        className="first-part w-100"
-        initial={{ x: "-7vw",y:50 }}
-        animate={{ x: 0, y:0 }}
-        transition={{ duration: 2 }}
+    <div className="header row py-lg-5  align-items-center">
+      <div
+        className="first-part w-100 col"
+        data-aos="fade-up-right" data-aos-duration="2000"
       >
         <h1  className="header-maintext">
-          Upskill For <span className="global">Global</span> Growth
+          Upskill For <span className="global">Global</span><br/> Growth
         </h1>
         <Text
           className="header-text mt-2"
@@ -54,17 +52,15 @@ const Header = () => {
             />
           }
         />
-      </motion.div>
-      <motion.div className="second-part w-100 d-flex justify-content-center"
-      initial={{ x: "7vw",y:50 }}
-      animate={{ x: 0, y:0 }}
-      transition={{ duration: 2 }}>
+      </div>
+      <div className="second-part w-100 col justify-content-center"
+      data-aos="fade-up-left" data-aos-duration="2000">
         <Image
           src={headerpic}
           alt="header-logo"
           className="second-img"
         />
-      </motion.div>
+      </div>
     </div>
   );
 };

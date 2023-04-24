@@ -12,37 +12,17 @@ import star from "../../../images/star.png";
 import course from "../../../images/course.png";
 import clock from "../../../images/clock.png";
 import system from "../../../images/system.png";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import { useAnimation } from "framer-motion";
+
 
 const MbaModules = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.05,
-  });
-
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        opacity: 1,
-        y:0,
-        transition: { duration: 2 },
-      });
-    }
-    if(!inView){
-      animation.start({opacity:0,y: 100})
-    }
-  }, [inView]);
+  
   return (
-    <div>
-      <h2 className="text-center py-4 py-lg-5 text-black">
+    <div className="cert mb-xxl-5">
+      <h2 className="text-center py-5 py-lg-5 text-black" data-aos="zoom-in-up" data-aos-duration="2000">
         Mini MBA Modules
       </h2>
-      <motion.div ref={ref} animate={animation} className="d-flex flex-wrap gap-3 justify-content-center">
-        <div className="cert-box p-4">
+      <div  className="row gap-3 justify-content-center">
+        <div className="cert-box p-4 col"  data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewA} className="training-logo" />
           </div>
@@ -79,7 +59,7 @@ const MbaModules = () => {
             </div>
           </div>
         </div>
-        <div className="cert-box p-4">
+        <div className="cert-box p-4 col"  data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewB} className="training-logo" />
           </div>
@@ -116,7 +96,7 @@ const MbaModules = () => {
             </div>
           </div>
         </div>
-        <div className="cert-box p-4">
+        <div className="cert-box p-4"  data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewE} className="training-logo" />
           </div>
@@ -153,7 +133,7 @@ const MbaModules = () => {
             </div>
           </div>
         </div>
-        <div className="cert-box p-4">
+        <div className="cert-box p-4" data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewF} className="training-logo" />
           </div>
@@ -190,7 +170,9 @@ const MbaModules = () => {
             </div>
           </div>
         </div>
-        <div className="cert-box p-4">
+        </div>
+        <div className="row justify-content-center gap-3 pt-4 pt-xxl-5">
+        <div className="cert-box p-4" data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewC} className="training-logo" />
           </div>
@@ -227,7 +209,7 @@ const MbaModules = () => {
             </div>
           </div>
         </div>
-        <div className="cert-box p-4">
+        <div className="cert-box p-4" data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewD} className="training-logo" />
           </div>
@@ -264,7 +246,7 @@ const MbaModules = () => {
             </div>
           </div>
         </div>
-        <div className="cert-box p-4">
+        <div className="cert-box p-4" data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={viewG} className="training-logo" />
           </div>
@@ -301,7 +283,7 @@ const MbaModules = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

@@ -4,7 +4,6 @@ import "react-multi-carousel/lib/styles.css";
 import Image from "../atom/Image";
 import quote1 from "../../images/openqt.png";
 import quote2 from "../../images/closeqt.png";
-// import ButtonGroup from "../atom/ButtonGroup";
 import sayimg from "../../images/Group 4.png";
 import sayimg2 from "../../images/Group 112.png";
 import sayimg3 from "../../images/Group 20646.png";
@@ -97,15 +96,15 @@ const Carousell = () => {
       {list.map((eachlist, idx) => {
         return (
           <>
-            <div className="d-flex flex-column-reverse gap-4 gap-lg-0 flex-lg-row p-4 ms-4" key={idx}>
-              <div className="saylogo">
+            <div className="row  p-4 ms-4" key={idx}>
+              <div className="saylogo col-sm-12 col-md-12 col-lg-6 ">
                 <Image src={eachlist.img} alt="" className="saylogoimg" />
               </div>
-              <div className="say2">
+              <div className="say2 col-sm-12 col-md-12 col-lg-6">
                 <h2 className="fs-1 pb-4 std say saytext-box">
                   What <span className="std2">Our Students</span> Are Saying
                 </h2>
-                <div className="">
+                <div className="say-text">
                   <Image src={quote1} alt="" className="quote" />
                   <span id="stdname">
                     {" "}
@@ -113,13 +112,12 @@ const Carousell = () => {
                     <span className="stdtiny">{eachlist.role}</span>
                   </span>
                 </div>
-                <div className="mt-3 ps-4 ms-1">
+                <div className="mt-3 ps-4 ms-1 say-comment">
                   <span className="">{eachlist.comment} </span>
                   <Image src={quote2} alt="" className="quote" />
                 </div>
               </div>
             </div>
-            {/* <ButtonGroup num={eachlist.id} length={list.length}/> */}
           </>
         );
       })}
