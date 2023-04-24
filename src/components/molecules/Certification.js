@@ -11,9 +11,9 @@ import viewE from "../../images/certe.png";
 import viewF from "../../images/certf.png";
 import viewG from "../../images/certg.png";
 
-const Certification = () => {
+const Certification = ({ref}) => {
   return (
-    <div className="cert" >
+    <div className="cert" ref={ref} >
       <h2 className="text-center py-4 py-lg-5 text-black" data-aos="zoom-in-up" data-aos-duration="2000">
         Certification Courses
       </h2>

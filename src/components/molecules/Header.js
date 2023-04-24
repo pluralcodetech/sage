@@ -9,7 +9,7 @@ import Button from "../atom/Button";
 import TextLinks from "../atom/TextLinks";
 
 
-const Header = () => {
+const Header = ({handleClick}) => {
   return (
     <div className="header row py-lg-5  align-items-center">
       <div
@@ -44,11 +44,12 @@ const Header = () => {
           </div>
         </div>
         <TextLinks
-          to="/minimba"
+          to=""
           children={
             <Button
               className="btn header-btn py-2 mt-2"
               children="Get Started"
+              onClick={handleClick}
             />
           }
         />

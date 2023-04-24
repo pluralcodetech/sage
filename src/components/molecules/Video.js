@@ -1,33 +1,44 @@
 import React from "react";
 import playimg from "../../images/Group 2.png";
 
-// import { useState } from "react";
 import Image from "../atom/Image";
 
 const Video = () => {
-  const videoWrapper = document.querySelector(".video");
-  const wrapper = document.querySelector(".wrapper");
-  const video = document.querySelector("#video1");
-  console.log(video);
+  const src = "https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+  
   const handlePlay = () => {
-    video.play();
+    const videocard = document.querySelector("#video1");
+    const videoWrapper = document.querySelector(".video");
+    const wrapper = document.querySelector(".wrapper");
+    const close =document.querySelector('.ex');
+    const playimg =document.querySelector('.playimg');
+    playimg.style.display="none"
+    videocard.play();
     videoWrapper.style.display = "block";
-    wrapper.style.background = "#FFFDFA";
+    close.style.display="block";
+    wrapper.classList.add('wrapper2') 
+    wrapper.classList.remove('wrapper') 
   };
+  
 
-  // getPlay.addEventListener("click", handlePlay)
-
+  
   const handleClose = () => {
-    video.pause();
-    video.currentTime = 0;
+    const videoWrapper = document.querySelector(".video");
+    const wrapper = document.querySelector(".wrapper2");
+    const videocard = document.querySelector("#video1");
+    const close =document.querySelector('.ex');
+    close.style.display="none"
+    videocard.pause();
+    videocard.currentTime = 0;
     videoWrapper.style.display = "none";
-    wrapper.style.background = "inherit";
+    wrapper.classList.add('wrapper')
+    wrapper.classList.remove('wrapper2')
   };
 
   return (
     <div className="wrapper">
       <button
-        className=" ex fs-3 btn position-absolute p-lg-5 top-0 text-black"
+        className="ex fs-3 btn p-lg-5 text-black"
         onClick={handleClose}
       >
         x
@@ -38,7 +49,7 @@ const Video = () => {
       <div className="video">
         <video width="100%" height="800px" id="video1" controls>
           <source
-            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+            src={src}
             type="video/mp4"
           />
           Your browser does not support HTML video.

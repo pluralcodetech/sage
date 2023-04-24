@@ -249,7 +249,7 @@ height: 350px;
 }
 .wrapper{
   width: 100%;
-  background-image: url("./images/afro.png");
+  background: url("./images/afro.png");
   height: 900px;
   position: relative;
   background-size: cover;
@@ -257,15 +257,20 @@ height: 350px;
   padding-top: 56.25%;
   background-repeat: no-repeat; */
 }
+.wrapper2{
+  width: 100%;
+  background: #FFFDFA;
+  height: 800px;
+  position: relative;
+  background-size: cover;
+}
 .video{
   width: 70%;
-  /* height: 100%; */
   margin: auto;
   display: none;
+ 
 }
 .playimg{
-  /* z-index: 1; */
-  /* width: 20%; */
 position: absolute;
 left: 45%;
 top:42%;
@@ -273,18 +278,12 @@ top:42%;
 .playimg img{
   width: 75%;
 }
-/* .wrapper.vid{
-  width: 100%;
-  background-color: #FFFFFF;
-  /* height: 900px; */
-  /* background-image: none;
-  position: relative;
-  padding-top: 56.25%;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */ */
+
 .ex{
   display: none;
+  position: absolute;
+  left:60px;
+  top:30px;
 }
 .react-multiple-carousel__arrow{
   bottom: 5px;

@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderM from "./minimba/HeaderM";
 import Who from "./minimba/Who";
-import Videomba from "./minimba/Videomba";
+import Video from "../molecules/Video";
 import Whymba from "./minimba/Whymba";
 import MbaModules from "./minimba/MbaModules";
 import CaseStudy from "../molecules/CaseStudy";
@@ -16,7 +16,7 @@ const MiniM = () => {
         <HeaderM />
       </div>
       <Who />
-      <Videomba />
+      <Video />
       <Whymba />
       <div className="w-100 px-4 px-lg-5 py-3 box">
         <MbaModules />

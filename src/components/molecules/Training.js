@@ -26,7 +26,7 @@ const Training = () => {
               />
            
             <div className="w-100 d-flex justify-content-end pt-4">
-              <TextLinks to="#" children={<Image src={arrow} />} />
+              <TextLinks to="/minimba" children={<Image src={arrow} />} />
             </div>
           </div>
         </div>
