@@ -8,7 +8,7 @@ const Faq = () => {
         return <FaqCard key={list.id} list={list} />;
       });
   return (
-    <div className="p-4 p-lg-5 mb-5 bg-white">
+    <div className="p-2 p-lg-5 mb-5 bg-white">
       <div className="text-center cert">
         <h2 className="py-2 faqh2">
           Frequently Asked Questions

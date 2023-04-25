@@ -10,10 +10,13 @@ import viewD from "../../images/certd.png";
 import viewE from "../../images/certe.png";
 import viewF from "../../images/certf.png";
 import viewG from "../../images/certg.png";
+import { Element } from 'react-scroll';
 
-const Certification = ({ref}) => {
+const Certification = () => {
   return (
-    <div className="cert" ref={ref} >
+    <>
+    <Element id="courses" name="courses">
+    <div className="cert" >
       <h2 className="text-center py-4 py-lg-5 text-black" data-aos="zoom-in-up" data-aos-duration="2000">
         Certification Courses
       </h2>
@@ -147,6 +150,8 @@ const Certification = ({ref}) => {
         />
       </div>
     </div>
+    </Element>
+    </>
   );
 };
 

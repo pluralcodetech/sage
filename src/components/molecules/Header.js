@@ -4,20 +4,21 @@ import Image from "../atom/Image";
 import flex from "../../images/autorenew.png";
 import fast from "../../images/alarm.png";
 import online from "../../images/laptop_mac.png";
-import headerpic from "../../images/imageone.png";
+import headerpic from "../../images/Group 17.png";
 import Button from "../atom/Button";
-import TextLinks from "../atom/TextLinks";
+import {Link} from "react-scroll";
 
-
-const Header = ({handleClick}) => {
+const Header = () => {
   return (
-    <div className="header row py-lg-5  align-items-center">
+    <div className="header row py-lg-5 align-items-center">
       <div
-        className="first-part w-100 col"
-        data-aos="fade-up-right" data-aos-duration="2000"
+        className="first-part col p-0"
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
-        <h1  className="header-maintext">
-          Upskill For <span className="global">Global</span><br/> Growth
+        <h1 className="header-maintext">
+          Upskill For <span className="global">Global</span>
+          <br /> Growth
         </h1>
         <Text
           className="header-text mt-2"
@@ -43,24 +44,16 @@ const Header = ({handleClick}) => {
             <Text className="fst-italic" children="100% Online" />
           </div>
         </div>
-        <TextLinks
-          to=""
-          children={
-            <Button
-              className="btn header-btn py-2 mt-2"
-              children="Get Started"
-              onClick={handleClick}
-            />
-          }
-        />
+        <Link to="courses" smooth={true}>
+          <Button className="btn header-btn py-2 mt-2" children="Get Started" />
+        </Link>
       </div>
-      <div className="second-part w-100 col justify-content-center"
-      data-aos="fade-up-left" data-aos-duration="2000">
-        <Image
-          src={headerpic}
-          alt="header-logo"
-          className="second-img"
-        />
+      <div
+        className="second-part p-0 col justify-content-center"
+        data-aos="fade-up-right"
+        data-aos-duration="2000"
+      >
+        <Image src={headerpic} alt="header-logo" className="second-img" />
       </div>
     </div>
   );

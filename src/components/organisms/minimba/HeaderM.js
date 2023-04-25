@@ -77,7 +77,7 @@ const HeaderM = () => {
         </div>
         <Button className="btn header-btn py-2 mt-2" children="Enroll Now" />
       </div>
-      <div data-aos="fade-up-left" data-aos-duration="2000"
+      <div data-aos="fade-up" data-aos-duration="2000"
         className="second-part w-100 py-5 py-lg-0 col d-inline-flex justify-content-center"
       >
         <Image src={headerpic} alt="header-logo" className="second-img imgg" />

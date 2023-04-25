@@ -96,11 +96,11 @@ const Carousell = () => {
       {list.map((eachlist, idx) => {
         return (
           <>
-            <div className="row  p-4 ms-4" key={idx}>
-              <div className="saylogo col-sm-12 col-md-12 col-lg-6 ">
+            <div className="row ms-4" key={idx}>
+              <div className="saylogo p-0 col-sm-12 col-md-12 col-lg-6 ">
                 <Image src={eachlist.img} alt="" className="saylogoimg" />
               </div>
-              <div className="say2 col-sm-12 col-md-12 col-lg-6">
+              <div className="say2 col-sm-12 col-md-12 col-lg-6 p-0">
                 <h2 className="fs-1 pb-4 std say saytext-box">
                   What <span className="std2">Our Students</span> Are Saying
                 </h2>
@@ -112,7 +112,7 @@ const Carousell = () => {
                     <span className="stdtiny">{eachlist.role}</span>
                   </span>
                 </div>
-                <div className="mt-3 ps-4 ms-1 say-comment">
+                <div className="mt-2 mt-lg-3 ps-4 ms-1 say-comment">
                   <span className="">{eachlist.comment} </span>
                   <Image src={quote2} alt="" className="quote" />
                 </div>

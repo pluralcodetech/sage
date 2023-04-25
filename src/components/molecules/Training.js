@@ -12,8 +12,8 @@ const Training = () => {
     <div className="training px-4 py-4 p-lg-5">
       <h2 className="text-center pb-5 text-black" data-aos="zoom-in-up" data-aos-duration="2000">Our Training</h2>
 
-      <div className="w-100 d-flex flex-column flex-lg-row justify-content-between gap-4">
-        <div className="training-box" data-aos="fade-up" data-aos-duration="2000">
+      <div className="row gap-3 justify-content-between">
+        <div className="training-box col p-0" data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={firstImg} alt="" className="training-logo" />
           </div>
@@ -31,7 +31,7 @@ const Training = () => {
           </div>
         </div>
 
-        <div className="training-box" data-aos="fade-up" data-aos-duration="2000">
+        <div className="training-box col p-0" data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={secondImg} alt="" className="training-logo" />
           </div>
@@ -47,7 +47,7 @@ const Training = () => {
           </div>
         </div>
 
-        <div className="training-box" data-aos="fade-up" data-aos-duration="2000">
+        <div className="training-box col p-0" data-aos="fade-up" data-aos-duration="2000">
           <div className="training-logo">
             <Image src={thirdImg} alt="" className="training-logo" />
           </div>

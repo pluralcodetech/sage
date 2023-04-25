@@ -26,7 +26,9 @@ const Video = () => {
     const videoWrapper = document.querySelector(".video");
     const wrapper = document.querySelector(".wrapper2");
     const videocard = document.querySelector("#video1");
+    const playimg =document.querySelector('.playimg');
     const close =document.querySelector('.ex');
+    playimg.style.display="block"
     close.style.display="none"
     videocard.pause();
     videocard.currentTime = 0;
@@ -47,7 +49,7 @@ const Video = () => {
         <Image src={playimg} alt="" />
       </div>
       <div className="video">
-        <video width="100%" height="800px" id="video1" controls>
+        <video width="100%" height="100%" id="video1" className="vid" controls>
           <source
             src={src}
             type="video/mp4"
