@@ -34,7 +34,7 @@ const CaseStudy = () => {
     if(!inView){
       animation.start({opacity:0.5,x: -20})
     }
-  }, [inView]);
+  }, [inView, animation]);
   useEffect(() => {
     if (inView) {
       anima.start({
@@ -46,7 +46,7 @@ const CaseStudy = () => {
     if(!inView){
       anima.start({opacity:0.5,x: 20})
     }
-  }, [inView])
+  }, [inView,anima])
   return (
     <div className="training p-4 p-lg-5">
       <h2 className="text-center text-black" data-aos="zoom-in-up" data-aos-duration="2000">Real-World Case Studies</h2>
