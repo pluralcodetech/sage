@@ -87,23 +87,23 @@ a{
   width: 100%;
   color: #011F5B;
   font-family: Gilroy-bold;
-  font-size: 60px;
+  font-size: 53px;
 }
 .global{
   color: #9B0000;
 }
 .header-text{
-  width: 65%;
+  width: 400px;
   color: #232323;
 }
 .header-logo{
-  width: 50%;
+  width: 300px;
   display: flex;
   justify-content: space-between;
   font-family:Gilory-regularItalic ;
 }
 .header-logomba{
-  width: 80%;
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
   column-gap:10px;
@@ -115,7 +115,7 @@ a{
 }
 .header-btn{
   background-color: #9B0000;
-  width: 50%;
+  width: 300px;
   color: #fff;
 }
 .header-btn:hover{
@@ -134,10 +134,7 @@ a{
 }
 
 .training-box{
-  /* width: 421px; */
-  flex-basis: 380px;
-  flex-grow: 0;
-  flex-shrink: 0;
+  width: 32%;
   background-color: #fff;
   border-radius: 24px;
   box-shadow:0px 0px 16px rgba(0, 0, 0, 0.16);
@@ -149,11 +146,12 @@ a{
   width: 100%;
 }
 .who-box{
-  width: 297px;
-  height: 241px;
+  width: 23%;
+  /* height: 241px;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 297px;
+  flex-basis: 280px; */
+  padding: 1rem 0;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border-radius: 20px;
@@ -162,18 +160,19 @@ a{
 }
 .who-text{
   width: 95%;
-  /* margin: auto; */
 font-family: 'Gilroy-Regular';
 }
+.row{
+  box-sizing: border-box;
+}
 .cert-box{
-  width: 280px;
-/* height: 431px; */
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 280px;
+  width: 23%;
   background: #FFFFFF;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
   border-radius: 24px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .cert-box h5{
   font-size: 18px;
@@ -181,6 +180,15 @@ font-family: 'Gilroy-Regular';
 .cert-text{
   font-size: 13.5px;
 }
+.certb{
+  height: 100%;
+}
+.certbb{
+  height: 100%;
+}
+/* .ag{
+  font-size: 13.1px;
+} */
 .view{
   text-decoration: none;
   color: #9B0000;
@@ -193,7 +201,9 @@ font-family: 'Gilroy-Regular';
 }
 .why-logo-img{
   width: 100%;
+  /* background-size:contain ; */
   border-radius: 24px;
+  object-fit: cover;
 }
 .why-second{
   background-color: #011F5B;
@@ -279,7 +289,7 @@ height: 350px;
 .playimg{
 position: absolute;
 left: 45%;
-top:42%;
+top:43%;
 }
 .playimg img{
   width: 75%;
@@ -301,6 +311,10 @@ top:42%;
 }
 .react-multiple-carousel__arrow--right {
   background-color: #9B0000 !important;
+}
+.react-multi-carousel-dot--active button{
+  background-color: #9B0000 !important; 
+  border-color: #9B0000 !important;
 }
 
 .play{
@@ -325,15 +339,16 @@ top:42%;
   font-family: Gilroy-Medium ;
   color: #232323;
 }
-.case-mainlogo{
+/* .case-mainlogo{
   width: 80%;
  
-}
+} */
 .case-logo{
-  width: 20%;
+  width: 15%;
   padding: 0 2rem;
   display: inline-flex;
   justify-content: center;
+  padding-top: 20px;
 }
 .faq{
   background-color: #FCFCFE;
@@ -384,21 +399,48 @@ border-radius: 24px 24px 0px 0px;
   color:#0C0C0C;
   font-family: Gilroy-Medium;
 }
+.searchbar{
+  top:30%;
+  left: 5%;
+}
+.srch{
+  max-width: 130px;
+  background-color: #9B0000;
+  color: #FFFFFF;
+}
+.leftfilter{
+  font-family: Gilroy-medium;
+}
+
+.check{
+  position: relative; overflow: hidden; width: 15px; height: 15px;
+  border: 2px solid #9B0000;
+  accent-color: #9B0000;
+  border-radius: 3px;
+}
+.chk{
+  left: -1px;
+  top:-1px;
+}
+.txt{
+  color: #9B0000;
+}
+
 
 @media (min-width:1500px) {
   .header-maintext{
-    font-size: 90px;
+    font-size: 70px;
   }
   .header-text{
-    width: 55%;
+    width: 500px;
     font-size: 20px;
   }
   .header-logo, .header-btn, .header-logomba{
-    width: 40%;
+    width: 450px;
     font-size: 20px;
   }
   .header-logomba{
-    width: 60%;
+    width: 600px;
   }
   .imgg{
     width: 60%;
@@ -414,7 +456,9 @@ border-radius: 24px 24px 0px 0px;
   .why-color2{
     height: 500px;
   }
-  
+  .viewbtn{
+    width: 24%;
+  }
   .saytext-box{
     width: 40%;
   }
@@ -423,7 +467,7 @@ border-radius: 24px 24px 0px 0px;
     font-size: 20px;
   }
   .say-comment{
-    width: 50%;
+    width: 500px;
     font-size: 20px;
   }
   .std{
@@ -436,11 +480,14 @@ border-radius: 24px 24px 0px 0px;
     width: 70%;
     font-size: 20px;
   }
+  .case-mainlogo{
+    padding: 3rem 0;
+  }
   .case-text{
     width: 40%;
   }
   .case-logo{
-    width: 15%;
+    width: 14%;
   }
 }
 
@@ -455,7 +502,7 @@ border-radius: 24px 24px 0px 0px;
     flex-direction: column;
   }
   .header-maintext{
-    font-size: 40px;
+    font-size: 30px;
     /* text-align: center; */
   }
   .header-text{
@@ -476,11 +523,8 @@ border-radius: 24px 24px 0px 0px;
   .second-img{
     width: 100%;
   }
-  .cert-box{
+  .cert-box, .training-box{
       width: 100%;
-      flex-grow: 0;
-      flex-shrink: 0;
-      flex-basis: 100%;
   }
   .cert-box h5{
     font-size: 18px;
@@ -511,6 +555,9 @@ border-radius: 24px 24px 0px 0px;
     background-color: #232323;
     color: #FFFFFF;
   }
+  .why-color2{
+    height: 400px;
+  }
   .say{
     width: 100%;
   }
@@ -540,22 +587,22 @@ border-radius: 24px 24px 0px 0px;
     background: url("./images/afro.png");
     height: 350px;
     position: relative;
-    background-size: cover;
+    background-size: contain;
     /* 
     padding-top: 56.25%;
-    background-repeat: no-repeat; */
+    */
+    background-repeat: no-repeat;
   }
   .wrapper2{
     width: 100%;
     background: #FFFDFA;
     height: 340px;
     position: relative;
-    background-size: cover;
+    background-size:contain;
   }
   .video{
     width: 90%;
     height: 100%;
-    
     margin: auto;
     display: none;
    
@@ -563,11 +610,11 @@ border-radius: 24px 24px 0px 0px;
   
   .playimg{
   position: absolute;
-  left: 45%;
-  top:42%;
+  left: 40%;
+  top:30%;
   }
   .playimg img{
-    width: 75%;
+    width: 60%;
   }
   
   .ex{
@@ -595,9 +642,15 @@ border-radius: 24px 24px 0px 0px;
   .faqh2{
     font-size: 30px;
   }
+  .faqlight, .faqthick, .faq-card-ans{
+    font-size: 15px;
+  }
   .faqtitle{
     width: 80%;
     margin: auto;
+  }
+  .elip{
+    width: 25px;
   }
   .foot-first-text{
     width: 100%;
@@ -605,5 +658,22 @@ border-radius: 24px 24px 0px 0px;
   }
   .footw{
   width: 40%;
+  font-size: 14px;
+  }
+
+  .footw h5, .footc h5{
+    font-size: 16px;
+  }
+  .footc{
+    font-size: 14px;
+  }
+  .copyr{
+    font-size: 12px;
+  }
+}
+
+@media (min-width:280px) and (max-width:280px) {
+  .header-maintext{
+    font-size: 20px;
   }
 }

@@ -55,40 +55,38 @@ const CaseStudy = () => {
         data-aos="zoom-in-up" data-aos-duration="2000"
         children="Success leaves clues, and so our courses allow you to learn from the most successful companies, their highs and lows and apply those lessons to the subject matter and to your own profession or business."
       />
-      <div className="case-mainlogo m-auto mt-5 py-5 d-flex flex-column align-items-center justify-content-center gap-5">
-        <motion.div ref={ref} animate={animation} className="w-100 d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap gap-4 gap-lg-2">
-          <div className="case-logo">
+      <div className="case-mainlogo">
+        <motion.div ref={ref} animate={animation} className="w-100 row justify-content-center pt-4 gap-3 align-items-center">
+          <div className="case-logo col-sm-2">
             <Image src={microsoft} alt="microsoft" className="w-100" />
           </div>
-          <div className="case-logo">
+          <div className="case-logo col-sm-2">
             <Image src={google} alt="google" className="w-100" />
           </div>
-          <div className="case-logo">
+          <div className="case-logo col-sm-2">
             <Image src={tiktok} alt="tiktok" className="w-100" />
           </div>
-          <div className="case-logo">
+          <div className="case-logo col-sm-2">
             <Image src={apple} alt="apple" className="w-100" />
           </div>
-          <div className="case-logo">
+          <div className="case-logo col-sm-2">
             <Image src={toyota} alt="toyota" className="w-100" />
           </div>
-        </motion.div>
-        <motion.div ref={ref} animate={anima}  className="w-100 d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap gap-4 ">
-          <div className="case-logo">
+        
+          <div className="case-logo col-sm-2">
             <Image src={jp} alt="jpmorganchase" className="w-100" />
           </div>
-          <div className="case-logo">
+          <div className="case-logo col-sm-2">
             <Image src={nike} alt="nike" className="w-100" />
           </div>
-          <div className="case-logo">
+          <div className="case-logo col-sm-2">
             <Image src={paypal} alt="paypal" className="w-100" />
           </div>
-        </motion.div>
-        <motion.div ref={ref} animate={animation} className="w-100 mt-lg-4 d-flex align-items-center justify-content-center ">
-          <div className="case-logo">
+        
+          <div className="case-logo col-sm-2">
             <Image src={motorola} alt="motorola" className="w-100" />
           </div>
-          <div className="case-logo">
+          <div className="case-logo col-sm-2">
             <Image src={flutter} alt="flutterwave" className="w-100" />
           </div>
         </motion.div>

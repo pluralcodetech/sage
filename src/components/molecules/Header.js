@@ -17,8 +17,7 @@ const Header = () => {
         data-aos-duration="2000"
       >
         <h1 className="header-maintext">
-          Upskill For <span className="global">Global</span>
-          <br /> Growth
+          Upskill For <span className="global">Global</span><br/>Growth
         </h1>
         <Text
           className="header-text mt-2"

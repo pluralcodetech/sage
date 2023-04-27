@@ -87,7 +87,7 @@ const Footer = () => {
             <TextLinks to="#">Refunds Policy</TextLinks>
             <TextLinks to="#">Privacy Policy</TextLinks>
           </div>
-          <div className="d-flex flex-column gap-2">
+          <div className="footc d-flex flex-column gap-2">
             <h5 className="">Contact</h5>
             <div className="d-flex gap-3 align-items-center">
               <Image src={tel} />

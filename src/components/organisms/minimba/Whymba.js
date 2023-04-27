@@ -9,9 +9,9 @@ const Whymba = () => {
     <div className="training p-4 p-lg-5">
       <h2 className="text-center py-5 text-black"  data-aos="zoom-in-up" data-aos-duration="2000">Why Mini MBA?</h2>
       <div >
-        <div className="w-100 d-flex flex-column-reverse flex-lg-row gap-4 my-3">
-          <div className="why-logo"  data-aos="fade-up" data-aos-duration="2000">
-            <Image src={firstwhy} className="why-logo-img" />
+        <div className="w-100 d-flex flex-column flex-lg-row gap-4 my-3">
+          <div className="why-logo "  data-aos="fade-up" data-aos-duration="2000">
+            <Image src={firstwhy} className="why-logo-img h-100" />
           </div>
           <div className="w-100 why-second p-4 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-duration="2000">
             <h2>100% Flexible</h2>

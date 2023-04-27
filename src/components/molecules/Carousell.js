@@ -112,7 +112,7 @@ const Carousell = () => {
                     <span className="stdtiny">{eachlist.role}</span>
                   </span>
                 </div>
-                <div className="mt-2 mt-lg-3 ps-4 ms-1 say-comment">
+                <div className="mt-2 mb-4 mb-lg-0 mt-lg-3 ps-4 ms-1 say-comment">
                   <span className="">{eachlist.comment} </span>
                   <Image src={quote2} alt="" className="quote" />
                 </div>

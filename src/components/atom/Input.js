@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Input = ({type, placeholder, className}) => {
+const Input = ({type, placeholder, className, ...rest}) => {
   return (
-    <input type={type} placeholder={placeholder} className={className}/>
+    <input type={type} placeholder={placeholder} className={className} {...rest}/>
   )
 }
 

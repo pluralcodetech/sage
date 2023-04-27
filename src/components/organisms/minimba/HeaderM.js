@@ -14,10 +14,10 @@ const HeaderM = () => {
   return (
     <div className="header py-lg-5 row align-items-end">
       <div data-aos="fade-up-right" data-aos-duration="2000"
-        className="first-part w-100 col"
+        className="first-part w-100 col p-0"
       >
         <h1 className="header-maintext">
-          Stand Out With Sage <br/><span className="global">Mini MBA</span>
+          Stand Out With Sage <span className="global"><br/>Mini MBA</span>
         </h1>
         <Text
           className="header-text mt-2"
@@ -78,7 +78,7 @@ const HeaderM = () => {
         <Button className="btn header-btn py-2 mt-2" children="Enroll Now" />
       </div>
       <div data-aos="fade-up" data-aos-duration="2000"
-        className="second-part w-100 py-5 py-lg-0 col d-inline-flex justify-content-center"
+        className="second-part w-100 py-5 py-lg-0 p-0 col d-inline-flex justify-content-center"
       >
         <Image src={headerpic} alt="header-logo" className="second-img imgg" />
       </div>
