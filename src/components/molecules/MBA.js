@@ -9,7 +9,7 @@ const MBA = () => {
   return (
     <div className="cert">
       <h2 className="text-center my-3 my-lg-5 text-black" data-aos="zoom-in-up" data-aos-duration="2000">Sage Mini MBA</h2>
-      <div  className="row align-items-center">
+      <div  className="row align-items-center gap-3">
         <div className="col-sm-12 col-md-12 col-lg-6 p-0" data-aos="fade-right" data-aos-duration="2000">
           <h2 className="fs-1 std size">Stand Out With</h2>
           <h2 className="fs-1 std2 size">Sage Mini MBA</h2>

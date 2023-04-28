@@ -208,6 +208,15 @@ font-family: 'Gilroy-Regular';
 .certbb{
   height: 100%;
 }
+.cert-btn{
+  background-color: #9B0000;
+  color: #FFFFFF;
+}
+.cert-btn:hover{
+  background-color: inherit;
+  border: 1px solid #9B0000;
+  color: #9B0000;
+}
 /* .ag{
   font-size: 13.1px;
 } */
@@ -451,7 +460,7 @@ border-radius: 24px 24px 0px 0px;
   color: #9B0000;
 }
 .cert-box-course{
-  width: 31%;
+  width: 30%;
   background: #FFFFFF;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
   border-radius: 24px 0px;
@@ -465,8 +474,10 @@ border-radius: 24px 24px 0px 0px;
 .page{
   /* width: 100%; */
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   list-style: none;
+  box-sizing: border-box;
 }
 .page-class, .label{
   width: 30px;
@@ -480,15 +491,22 @@ border-radius: 24px 24px 0px 0px;
   cursor: pointer;
 }
 
-.page-active, .label{
+.label{
   background-color: #9B0000;
   color: #FFFFFF;
+}
+.page-active{
+  color: #FFFFFF;
+  background-color: #fda0a0;
 }
 .activelin{
   color: #FFFFFF;
 }
 .labellink{
   color: #FFFFFF;
+}
+.headerc{
+  background-color: #FFFDFA;
 }
 
 @media (min-width:1500px) {
@@ -597,11 +615,14 @@ border-radius: 24px 24px 0px 0px;
   .second-img{
     width: 100%;
   }
-  .cert-box, .training-box{
+  .cert-box, .training-box, .cert-box-course{
       width: 100%;
   }
   .cert-box h5{
     font-size: 18px;
+  }
+  .cert-btn{
+    color: #9B0000;
   }
   .cert-text{
     font-size: 13.5px;
@@ -743,6 +764,9 @@ border-radius: 24px 24px 0px 0px;
   }
   .copyr{
     font-size: 12px;
+  }
+  .srch{
+    max-width: 90px;
   }
 }
 

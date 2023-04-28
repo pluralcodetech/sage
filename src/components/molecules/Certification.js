@@ -177,7 +177,7 @@ const Certification = () => {
           </div>
           <div className="viewbtn m-auto py-4 py-xxl-5">
             <Button
-              className="w-100 d-flex justify-content-center btn header-btn"
+              className="w-100 d-flex justify-content-center btn cert-btn"
               children="View all courses"
             />
           </div>

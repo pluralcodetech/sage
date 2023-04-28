@@ -26,7 +26,7 @@ const handlePageClick = (event) => {
     setCurrentPage(newOffset);
   };
   return (
-    <div>
+    <div className=''>
         {/* {each} */}
       <ReactPaginate
         breakLabel="..."

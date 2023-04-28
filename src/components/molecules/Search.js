@@ -7,7 +7,7 @@ const Search = ({searchplaceholder, className, inputclass, inputtype}) => {
   return (
     <div className={className} >
       <Input type={inputtype} placeholder={searchplaceholder} className={inputclass} />
-      <div className='srch position-relative col rounded-end'>
+      <div className='srch position-relative rounded-end'>
       <Button children="Search" className="btn px-3 text-white" />
       <box-icon name='search' size="17px" class="position-absolute searchbar" color="white"></box-icon>
       </div>
