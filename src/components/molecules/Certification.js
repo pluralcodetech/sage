@@ -38,13 +38,13 @@ const Certification = () => {
                 <Text
                   children="Master the principles of 360 marketing for business growth."
                   className="training-text cert-text "
-                  />
-              </div>
-                <TextLinks
-                  to="#"
-                  children="View Course"
-                  className="view cert-text"
                 />
+              </div>
+              <TextLinks
+                to="#"
+                children="View Course"
+                className="view cert-text"
+              />
             </div>
             <div
               className="col-sm-12 col-md-12 col-lg-3 cert-box p-4"
@@ -60,12 +60,12 @@ const Certification = () => {
                   children="Become a business operator and master high level management skills."
                   className="training-text cert-text "
                 />
-                  </div>
-                <TextLinks
-                  to="#"
-                  children="View Course"
-                  className="view cert-text"
-                />
+              </div>
+              <TextLinks
+                to="#"
+                children="View Course"
+                className="view cert-text"
+              />
             </div>
             <div
               className="col-sm-12 col-md-12 col-lg-3 cert-box p-4"
@@ -81,12 +81,12 @@ const Certification = () => {
                   children="Learn Product Management, a highly demanded corporate tech skill."
                   className="training-text cert-text "
                 />
-                  </div>
-                <TextLinks
-                  to="#"
-                  children="View Course"
-                  className="view cert-text"
-                />
+              </div>
+              <TextLinks
+                to="#"
+                children="View Course"
+                className="view cert-text"
+              />
             </div>
             <div
               className="col-sm-12 col-md-12 col-lg-3 cert-box p-4"
@@ -101,13 +101,13 @@ const Certification = () => {
                 <Text
                   children="Master Agile methodologies for efficiently managing corporate projects."
                   className="training-text cert-text"
-                  />
-                  </div>
-                <TextLinks
-                  to="#"
-                  children="View Course"
-                  className="view cert-text"
                 />
+              </div>
+              <TextLinks
+                to="#"
+                children="View Course"
+                className="view cert-text"
+              />
             </div>
           </div>
           <div className="row justify-content-center gap-3 pt-4 pt-xxl-5">
@@ -125,12 +125,12 @@ const Certification = () => {
                   children="Master and deploy Data Analytics skills into business for predictive analysis."
                   className="training-text cert-text "
                 />
-                  </div>
-                <TextLinks
-                  to="#"
-                  children="View Course"
-                  className="view cert-text"
-                />
+              </div>
+              <TextLinks
+                to="#"
+                children="View Course"
+                className="view cert-text"
+              />
             </div>
             <div
               className="col-sm-12 col-md-12 col-lg-3 cert-box p-4"
@@ -146,12 +146,12 @@ const Certification = () => {
                   children="Understand international laws, practices and skills to compete globally."
                   className="training-text cert-text "
                 />
-                  </div>
-                <TextLinks
-                  to="#"
-                  children="View Course"
-                  className="view cert-text"
-                />
+              </div>
+              <TextLinks
+                to="#"
+                children="View Course"
+                className="view cert-text"
+              />
             </div>
             <div
               className="cert-box p-4 col-sm-12 col-md-12 col-lg-3"
@@ -167,12 +167,12 @@ const Certification = () => {
                   children="Learn how the most successful startups build project that gets users hooked."
                   className="training-text cert-text "
                 />
-                  </div>
-                <TextLinks
-                  to="#"
-                  children="View Course"
-                  className="view cert-text"
-                />
+              </div>
+              <TextLinks
+                to="#"
+                children="View Course"
+                className="view cert-text"
+              />
             </div>
           </div>
           <div className="viewbtn m-auto py-4 py-xxl-5">

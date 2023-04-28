@@ -14,7 +14,7 @@ const Home = () => {
  
   return (
     <>
-      <div className="w-100 px-4 px-lg-5 py-3 box">
+      <div className="w-100 px-4 px-lg-5 py-3 box headerbg">
         <Header />
       </div>
       <Training />

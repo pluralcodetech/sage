@@ -5,11 +5,11 @@ import Home from "./components/pages/Home";
 import MiniMBA from "./components/pages/MiniMBA";
 import Courses from "./components/pages/Courses";
 
+
 function App() {
   return (
     <div>
       <Navbar />
-      {/* <Courses/> */}
 
       <Routes>
         <Route path="/" element={<Home />} />

@@ -6,7 +6,7 @@ import time from "../../../images/Vector.png";
 import level from "../../../images/Vector (1).png";
 import price from "../../../images/Vector (2).png";
 import access from "../../../images/Vector (3).png";
-import headerpic from "../../../images/Group 20646.png";
+// import headerpic from "../../../images/Group 20646.png";
 import Button from "../../atom/Button";
 
 
@@ -75,12 +75,15 @@ const HeaderM = () => {
             />
           </div>
         </div>
+        <div className="pb-lg-5">
+
         <Button className="btn header-btn py-2 mt-2" children="Enroll Now" />
+        </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="2000"
+      <div 
         className="second-part w-100 py-5 py-lg-0 p-0 col d-inline-flex justify-content-center"
       >
-        <Image src={headerpic} alt="header-logo" className="second-img imgg" />
+        {/* <Image src={headerpic} alt="header-logo" className="second-img imgg" /> */}
       </div>
     </div>
   );

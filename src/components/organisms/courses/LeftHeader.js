@@ -4,11 +4,15 @@ import TextLinks from '../../atom/TextLinks'
 
 const LeftHeader = () => {
   return (
-    <div>
-      <h4>Filter by</h4>
-      <div className='w-50'>
+    <div className='pt-3'>
+      
+      <h5 className='text-center'>Filter by</h5>
+      <div className='py-4'>
         <Filter h5="Subject" p1="Operation Management" p2="Operation Management" p3="Operation Management" p4="Operation Management" p5="Operation Management" />
-        <TextLinks to="#" children="See more" className="w-100 txt" />
+        <div className='text-center see-course'>
+
+        <TextLinks to="#" children="See more" className="txt" />
+        </div>
       </div>
     </div>
   )

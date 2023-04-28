@@ -12,7 +12,7 @@ import Say from "../molecules/Say";
 const MiniM = () => {
   return (
     <div>
-      <div className="w-100 px-4 px-lg-5 py-3 box">
+      <div className="headerbgmini w-100 px-4 px-lg-5 py-3 box">
         <HeaderM />
       </div>
       <Who />
