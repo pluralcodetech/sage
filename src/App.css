@@ -209,6 +209,7 @@ font-family: 'Gilroy-Regular';
   height: 100%;
 }
 .cert-btn{
+  width: 300px;
   background-color: #9B0000;
   color: #FFFFFF;
 }
@@ -358,6 +359,7 @@ top:43%;
   /* display: none; */
 }
 .mbacol{
+  width: 95%;
   color: #232323;
   font-family: Gilroy-Medium;
 }
@@ -604,7 +606,7 @@ border-radius: 24px 24px 0px 0px;
   .header-logo{
     width: 100%;
   }
-  .header-btn, .header-btn2{
+  .header-btn, .header-btn2, .cert-btn{
     width: 100%;
   }
   .header-logomba{
@@ -620,9 +622,6 @@ border-radius: 24px 24px 0px 0px;
   }
   .cert-box h5{
     font-size: 18px;
-  }
-  .cert-btn{
-    color: #9B0000;
   }
   .cert-text{
     font-size: 13.5px;
@@ -722,7 +721,7 @@ border-radius: 24px 24px 0px 0px;
   .react-multiple-carousel__arrow--left, .react-multiple-carousel__arrow--right {
     display: none;
   }
-  .mbalogo{
+  .mbalogo, .mbacol{
     width: 100%;
   }
   .case-text{
