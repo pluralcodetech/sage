@@ -8,7 +8,7 @@ import Footer from "../molecules/Footer";
 import Learn from "../organisms/eachCourse/Learn";
 import Box from "../organisms/eachCourse/Box";
 
-const EachCourse = () => {
+const EachCourse = (props) => {
   return (
     <div>
       <HeaderEchC />

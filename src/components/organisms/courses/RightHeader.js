@@ -83,7 +83,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks children="View Course" className="view"/>
+          <TextLinks to="/eachcourse" children="View Course" className="view"/>
         </div>
         <div
           className="cert-box-course p-4 col-sm-12 col-md-12 col-lg-4"

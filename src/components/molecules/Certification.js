@@ -41,7 +41,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="eachcourse"
+                to="/eachcourse"
                 children="View Course"
                 className="view cert-text"
               />
@@ -62,7 +62,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="eachcourse"
+                to="/eachcourse"
                 children="View Course"
                 className="view cert-text"
               />
