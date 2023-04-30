@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <>
       <div className="training p-4 p-lg-5 pb-2 w-100 d-flex flex-column flex-lg-row gap-5 justify-content-between">
-        <div className="w-50 d-flex flex-column justify-content-between">
+        <div className="firstfoot d-flex flex-column justify-content-between">
           <div>
             <div className="footlogo">
               <Image src={logo} className="w-100" />
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-100 d-flex flex-wrap foottwo flex-row gap-5">
+        <div className=" d-flex flex-wrap foottwo flex-row gap-5">
           <div className="footw d-flex flex-column gap-2">
             <h5 className="">Top Courses</h5>
 

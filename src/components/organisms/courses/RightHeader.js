@@ -29,7 +29,7 @@ const RightHeader = () => {
           <Search
             inputtype="text"
             searchplaceholder="What do you want to learn"
-            inputclass="col rounded-start form-control "
+            inputclass="col rounded-start srchinp form-control"
             className="row"
           />
         </div>
