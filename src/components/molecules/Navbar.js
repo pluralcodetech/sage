@@ -1,16 +1,27 @@
 import React from "react";
 import Image from "../atom/Image";
 import logo from "../../images/SIBM 0005.png";
+import Text from "../atom/Text";
 import TextLinks from "../atom/TextLinks";
 import "boxicons";
 import Button from "../atom/Button";
+import { useRef } from "react";
 
 const Navbar = () => {
+  const dp = useRef();
+
+  const showCourseDropdown=()=>{
+    dp.current.style.display="block"
+  }
+
+  const hideCourseDropdown =()=>{
+    dp.current.style.display="none"
+  }
   return (
     <>
       <nav className="navbar navbar-expand-lg px-4 px-lg-5 py-4">
         <div className="navlogo">
-          <Image src={logo} alt="sage" className="w-100"/>
+          <Image src={logo} alt="sage" className="w-100" />
         </div>
         <button
           className="navbar-toggler red"
@@ -26,9 +37,92 @@ const Navbar = () => {
         <div className="collapse navbar-collapse list-container" id="navbarNav">
           <div className="navbar-nav navlist d-flex justify-content-center gap-4">
             <TextLinks to="/" className="nav-link" children="Home" />
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center position-relative" onMouseOver={showCourseDropdown} onMouseOut={hideCourseDropdown}>
               <TextLinks to="/test" children="Courses" className="nav-link" />
               <box-icon name="chevron-down"></box-icon>
+              <div className="courses-dropdown position-absolute" ref={dp}>
+                <Text className="courses-dropdown-bigtext" children="Certificate Courses" />
+                <div className="row">
+                  <div className="col">
+                    <ul>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Marketing"
+                          to="#"
+                        />
+                      </li>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Product Management"
+                          to="#"
+                        />
+                      </li>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Operations Management"
+                          to="#"
+                        />
+                      </li>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Agile Project Management"
+                          to="#"
+                        />
+                      </li>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Business Analysis"
+                          to="#"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col">
+                    <ul>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="International Business"
+                          to="#"
+                        />
+                      </li>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Innovation & Design Thinking"
+                          to="#"
+                        />
+                      </li>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Accounting & Finance"
+                          to="#"
+                        />
+                      </li>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Team Leadership"
+                          to="#"
+                        />
+                      </li>
+                      <li>
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Growth Hacking"
+                          to="#"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
             <TextLinks to="#" className="nav-link" children="About Sage" />
             <div className="d-flex align-items-center">
@@ -42,30 +136,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      {/* <div className="px-5 py-4 nav-container d-flex items-center">
-        <div className="navlogo">
-          <Image src={logo} alt="sage" />
-        </div>
-        <div className="list-container">
-          <div className="navlist d-flex justify-content-center gap-4">
-            <TextLinks to="#" children="Home" />
-            <div className="d-flex items-center">
-              <TextLinks to="#" children="Courses" />
-              <box-icon name="chevron-down"></box-icon>
-            </div>
-            <TextLinks to="#" children="About Sage" />
-            <div className="d-flex items-center">
-              <TextLinks to="#" children="More" />
-              <box-icon name="chevron-down"></box-icon>
-            </div>
-          </div>
-          <div className="navbtn-container">
-            <Button children="Login" className="btn px-4 logBtn m-2" />
-            <Button children="Sign up" className="btn px-4 signBtn m-2" />
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };
