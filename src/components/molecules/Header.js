@@ -45,7 +45,7 @@ const Header = () => {
         </div>
         <div>
 
-        <Link to="#" smooth={true}>
+        <Link to="minimba" smooth={true}>
           <Button className="btn header-btn py-2 mt-2" children="Sage Mini Mba" />
         </Link>
         </div>
