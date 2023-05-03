@@ -57,7 +57,7 @@ const Navbar = () => {
               <TextLinks to="/test" children="Courses" className="nav-link" />
               <box-icon name="chevron-down"></box-icon>
               <div className="courses-dropdown position-absolute" ref={dp}>
-                <TextLinks to="/courses" className="courses-dropdown-bigtext" children="Certificate Courses" />
+                <TextLinks to="/courses" className="dpbigtext" children="Certificate Courses" />
                 <div className="row">
                   <div className="col-sm-12 col-md-12 col-lg-6 p-0">
                     <ul className="">

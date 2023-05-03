@@ -101,13 +101,18 @@ a{
   color: #4E4E4E;
   font-family: Gilroy-Regular;
 }
+.courses-dropdown-links:hover{
+  color: #011F5B;
+  font-family: Gilroy-semibold;
+}
 .courses-dropdown li::marker{
   color: #9B0000;
   font-size: 27px;
 }
-.courses-dropdown-bigtext {
-  color: #011F5B;
-  font-size: 20px;
+.dpbigtext {
+  color: #011F5B !important;
+  font-family: Gilroy-semibold !important;
+  font-size: 22px;
 }
 .more-dropdown{
   width: 300px;
@@ -851,10 +856,9 @@ border-radius: 24px 24px 0px 0px;
  
   .headerbgmini{
     /* background-size: ; */
-    background: linear-gradient(180deg, rgba(1, 31, 91, 0) 0.02%, rgba(1, 31, 91, 0.24) 22.09%, rgba(1, 31, 91, 0.57) 47.13%, rgba(1, 31, 91, 0.9) 57.63%),url('./images/Group\ 20652.png');
+    background: linear-gradient(180.29deg, rgba(1, 31, 91, 0.64) 0.25%, rgba(1, 31, 91, 0.9) 99.75%),url('./images/5a3e732812\ 2.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
   }
   .header-maintext{
     font-size: 28px;
@@ -862,23 +866,27 @@ border-radius: 24px 24px 0px 0px;
     margin-top: 70%;
     width: 100%;
   }
+  .header2{
+    margin-top: 85%;
+  }
   .header-text{
-    width: 320px;
+    width: 100%;
     text-align: center;
     margin: auto;
     font-size: 14px;
     padding: 5px 0;
   }
   .header-logo{
-    width: 280px;
+    width: 80%;
     margin: auto;
   }
   .header-btn, .header-btn2, .cert-btn{
-    width: 300px;
+    width: 100%;
   }
   .header-logomba{
-    width: 320px;
+    width: 100%;
     margin: auto;
+    justify-content: center;
     
     /* justify-content: space-between; */
   }
@@ -1172,16 +1180,9 @@ border-radius: 24px 24px 0px 0px;
     font-size: 18px;
   }
   
-  .header-text{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-  }
-  .header-logo, .header-logomba{
+  .header-logo{
     width: 100%;
     margin: auto;
   }
-  .header-btn, .header-btn2, .cert-btn{
-    width: 100%;
-  }
+  
 }

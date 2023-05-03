@@ -16,8 +16,8 @@ const HeaderM = () => {
       <div data-aos="fade-up-right" data-aos-duration="2000"
         className="first-part w-100 col p-0"
       >
-        <h1 className="header-maintext">
-          Stand Out With Sage <span className="global"><br/>Mini MBA</span>
+        <h1 className="header-maintext header2">
+          Stand Out With Sage <span className="global">Mini MBA</span>
         </h1>
         <Text
           className="header-text mt-2"
@@ -75,7 +75,7 @@ const HeaderM = () => {
             />
           </div>
         </div>
-        <div className="pb-lg-5 d-flex justify-content-center d-lg-block">
+        <div className="pb-lg-5 ">
 
         <Button className="btn header-btn py-2 mt-2" children="Enroll Now" />
         </div>

@@ -43,13 +43,13 @@ const Header = () => {
             <Text className="fst-italic" children="100% Online" />
           </div>
         </div>
-        <div className="d-flex justify-content-center d-lg-block">
+        <div className="">
 
         <Link to="minimba" smooth={true}>
           <Button className="btn header-btn py-2 mt-2" children="Sage Mini Mba" />
         </Link>
         </div>
-        <div className="py-3 d-flex justify-content-center d-lg-block">
+        <div className="py-3 ">
 
         <Link to="courses" smooth={true}>
           <Button className="btn header-btn2 py-2 mt-2" children="Certificate Courses" />
