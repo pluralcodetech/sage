@@ -75,7 +75,7 @@ const HeaderM = () => {
             />
           </div>
         </div>
-        <div className="pb-lg-5">
+        <div className="pb-lg-5 d-flex justify-content-center d-lg-block">
 
         <Button className="btn header-btn py-2 mt-2" children="Enroll Now" />
         </div>

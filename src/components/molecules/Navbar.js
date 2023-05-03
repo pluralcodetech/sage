@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "../atom/Image";
 import logo from "../../images/SIBM 0005.png";
-// import Text from "../atom/Text";
+import smallicon from '../../images/Frame 427318704.png'
+import closeicon from '../../images/icon.png'
 import TextLinks from "../atom/TextLinks";
 import "boxicons";
 import Button from "../atom/Button";
 import { useRef } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const dp = useRef();
@@ -24,23 +26,30 @@ const Navbar = () => {
   const hideMore=()=>{
     more.current.style.display="none"
   }
+
+  const [open, setOpen] = useState(true);
+  const handleOpen =()=>{
+    setOpen(!open)
+  }
   return (
     <>
       <nav className="navbar navbar-expand-lg px-4 px-lg-5 py-4">
         <div className="navlogo">
           <Image src={logo} alt="sage" className="w-100" />
         </div>
-        <button
-          className="navbar-toggler red"
-          type="button"
+      
+        <div
+          className=" border-0 d-flex d-lg-none justify-content-end"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={handleOpen}
         >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          {open ?<Image src={smallicon} className="w-50"/> :<Image src={closeicon} className="w-50"/>}
+          {/* <span className="navbar-toggler-icon"></span> */}
+        </div>
         <div className="collapse navbar-collapse list-container" id="navbarNav">
           <div className="navbar-nav navlist d-flex justify-content-center gap-4">
             <TextLinks to="/" className="nav-link" children="Home" />

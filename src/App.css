@@ -724,13 +724,17 @@ border-radius: 24px 24px 0px 0px;
 
 @media (min-width:1500px) {
   .header-maintext{
+    width: 600px;
     font-size: 70px;
+  }
+  .first-part{
+    margin: 5rem 0;
   }
   .header-text{
     width: 500px;
     font-size: 20px;
   }
-  .header-logo, .header-btn, .header-logomba{
+  .header-logo, .header-btn, .header-btn2, .header-logomba{
     width: 450px;
     font-size: 20px;
   }
@@ -838,10 +842,13 @@ border-radius: 24px 24px 0px 0px;
   .header{
     flex-direction: column;
   }
+  
   .headerbg{
-    background-size: cover;
-    background-position:right;
+    background: linear-gradient(180.29deg, rgba(1, 31, 91, 0.64) 0.25%, rgba(1, 31, 91, 0.9) 99.75%),url('./images/5a3e732812\ 1.png');
+    background-size:cover;
+    background-repeat: no-repeat;
   }
+ 
   .headerbgmini{
     /* background-size: ; */
     background: linear-gradient(180deg, rgba(1, 31, 91, 0) 0.02%, rgba(1, 31, 91, 0.24) 22.09%, rgba(1, 31, 91, 0.57) 47.13%, rgba(1, 31, 91, 0.9) 57.63%),url('./images/Group\ 20652.png');
@@ -850,20 +857,28 @@ border-radius: 24px 24px 0px 0px;
     background-position: left;
   }
   .header-maintext{
-    font-size: 30px;
-    /* text-align: center; */
+    font-size: 28px;
+    text-align: center;
+    margin-top: 70%;
+    width: 100%;
   }
   .header-text{
-    width: 100%;
+    width: 320px;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    padding: 5px 0;
   }
   .header-logo{
-    width: 100%;
+    width: 280px;
+    margin: auto;
   }
   .header-btn, .header-btn2, .cert-btn{
-    width: 100%;
+    width: 300px;
   }
   .header-logomba{
-    width: 100%;
+    width: 320px;
+    margin: auto;
     
     /* justify-content: space-between; */
   }
@@ -1154,6 +1169,19 @@ border-radius: 24px 24px 0px 0px;
 
 @media (min-width:280px) and (max-width:280px) {
   .header-maintext{
-    font-size: 20px;
+    font-size: 18px;
+  }
+  
+  .header-text{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .header-logo, .header-logomba{
+    width: 100%;
+    margin: auto;
+  }
+  .header-btn, .header-btn2, .cert-btn{
+    width: 100%;
   }
 }
