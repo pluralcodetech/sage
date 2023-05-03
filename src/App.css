@@ -4,6 +4,10 @@
   src: url(./font/Gilroy-Medium.ttf);
 }
 @font-face {
+  font-family: Gilroy-black;
+  src: url(./font/Gilroy-Black.ttf);
+}
+@font-face {
   font-family: Gilroy-semibold;
   src: url(./font/Gilroy-SemiBold.ttf);
 }
@@ -87,14 +91,11 @@ a{
   width: 600px;
   top:100%;
   display: none;
-  padding: 2rem;
+  padding: 2rem ;
   background-color: #FFFFFF;
   box-shadow: 0px -8.87px 20px -2.21742px rgba(16, 24, 40, 0.05), 0px 3.54787px 81px -2.6609px rgba(16, 24, 40, 0.05);
   border-radius: 16px;
-}
-.courses-dropdown-bigtext{
-  color: #011F5B;
-  font-size: 20px;
+  z-index: 1;
 }
 .courses-dropdown-links{
   color: #4E4E4E;
@@ -103,6 +104,20 @@ a{
 .courses-dropdown li::marker{
   color: #9B0000;
   font-size: 27px;
+}
+.courses-dropdown-bigtext {
+  color: #011F5B;
+  font-size: 20px;
+}
+.more-dropdown{
+  width: 300px;
+  top:70%;
+  display: none;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px -8.87px 20px -2.21742px rgba(16, 24, 40, 0.05), 0px 3.54787px 81px -2.6609px rgba(16, 24, 40, 0.05);
+  border-radius: 16px;
+  z-index: 1;
 }
 .headerbg{
   background: linear-gradient(300deg, rgba(1, 31, 91, 0) 0.06%, rgba(1, 31, 91, 0.64) 54.48%, rgba(1, 31, 91, 0.9) 89.5%),url('./images/Group\ 20651.png');
@@ -670,6 +685,42 @@ border-radius: 24px 24px 0px 0px;
   width: 600px;
   font-family: Gilroy-Regular;
 }
+.verifyrow{
+  width: 49%;
+}
+.verifytext{
+  font-family: Gilroy-black;
+  font-size: 50px;
+  color: #011F5B;
+}
+.verifytext span{
+  color: #9B0000;
+}
+.verifytext2{
+  width: 400px;
+  color: #4E4E4E;
+}
+.verifyimg{
+  width: 45%;
+}
+.inpverify{
+  background-color: #F0F0F0;
+  border: none;
+}
+.accredit-container{
+  padding: 2rem 8rem;
+  box-sizing: border-box;
+}
+.accredit{
+  box-sizing: border-box;
+  box-shadow: 0px 0px 16.932px rgba(0, 0, 0, 0.16);
+  margin-bottom: 16px !important;
+}
+.accredittext{
+  /* width: 100%; */
+  color: #4E4E4E;
+  font-family: Gilroy-Regular;
+}
 
 @media (min-width:1500px) {
   .header-maintext{
@@ -770,6 +821,10 @@ border-radius: 24px 24px 0px 0px;
     padding: 2.5rem 1rem;
     z-index: 1;
   }
+  .verifytext{
+    font-size: 60px;
+  }
+  
   
 }
 
@@ -897,7 +952,6 @@ border-radius: 24px 24px 0px 0px;
     height: 100%;
     margin: auto;
     display: none;
-   
   }
   
   .playimg{
@@ -1068,6 +1122,32 @@ border-radius: 24px 24px 0px 0px;
   }
   .box-eachtxt{
     width: 100%;
+  }
+  .verifyrow{
+    width: 100%;
+  }
+  .verifytext{
+    font-size: 35px;
+  }
+  .verifytext2{
+    width: 100%;
+  }
+  .courses-dropdown{
+    width: 120%;
+    top:100%;
+    padding: 1rem;
+    z-index: 1;
+  }
+  
+  .more-dropdown{
+    width: 90%;
+    top:79%;
+    display: none;
+    padding: 1rem;
+    z-index: 1;
+  }
+  .accredit-container{
+    padding: 1rem 2rem;
   }
 
 }

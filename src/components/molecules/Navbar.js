@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "../atom/Image";
 import logo from "../../images/SIBM 0005.png";
-import Text from "../atom/Text";
+// import Text from "../atom/Text";
 import TextLinks from "../atom/TextLinks";
 import "boxicons";
 import Button from "../atom/Button";
@@ -9,6 +9,7 @@ import { useRef } from "react";
 
 const Navbar = () => {
   const dp = useRef();
+  const more = useRef();
 
   const showCourseDropdown=()=>{
     dp.current.style.display="block"
@@ -16,6 +17,12 @@ const Navbar = () => {
 
   const hideCourseDropdown =()=>{
     dp.current.style.display="none"
+  }
+  const showMore=()=>{
+    more.current.style.display="block"
+  }
+  const hideMore=()=>{
+    more.current.style.display="none"
   }
   return (
     <>
@@ -41,10 +48,10 @@ const Navbar = () => {
               <TextLinks to="/test" children="Courses" className="nav-link" />
               <box-icon name="chevron-down"></box-icon>
               <div className="courses-dropdown position-absolute" ref={dp}>
-                <Text className="courses-dropdown-bigtext" children="Certificate Courses" />
+                <TextLinks to="/courses" className="courses-dropdown-bigtext" children="Certificate Courses" />
                 <div className="row">
-                  <div className="col">
-                    <ul>
+                  <div className="col-sm-12 col-md-12 col-lg-6 p-0">
+                    <ul className="">
                       <li>
                         <TextLinks
                           className="courses-dropdown-links"
@@ -73,7 +80,7 @@ const Navbar = () => {
                           to="#"
                         />
                       </li>
-                      <li>
+                      <li className="">
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Business Analysis"
@@ -82,9 +89,9 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="col">
-                    <ul>
-                      <li>
+                  <div className="col-sm-12 col-md-12 col-lg-6 p-0 ">
+                    <ul className="">
+                      <li className="">
                         <TextLinks
                           className="courses-dropdown-links"
                           children="International Business"
@@ -125,9 +132,32 @@ const Navbar = () => {
               </div>
             </div>
             <TextLinks to="#" className="nav-link" children="About Sage" />
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center" onMouseOver={showMore} onMouseOut={hideMore}>
               <TextLinks to="#" children="More" className="nav-link" />
               <box-icon name="chevron-down"></box-icon>
+              <div className="more-dropdown position-absolute" ref={more}>
+                      <div className="py-1">
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Verify Our Students"
+                          to="/verify"
+                        />
+                      </div>
+                      <div className="py-1">
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Our Partners"
+                          to="/partners"
+                        />
+                      </div>
+                      <div className="py-1">
+                        <TextLinks
+                          className="courses-dropdown-links"
+                          children="Contact Us"
+                          to="#"
+                        />
+                      </div>
+                      </div>
             </div>
           </div>
           <div className="navbtn-container d-flex gap-2 my-2 my-lg-0">
