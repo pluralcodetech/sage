@@ -111,9 +111,9 @@ a{
 }
 .more-dropdown{
   width: 300px;
-  top:70%;
+  top:65%;
   display: none;
-  padding: 2rem;
+  padding: 1rem 2rem;
   background-color: #FFFFFF;
   box-shadow: 0px -8.87px 20px -2.21742px rgba(16, 24, 40, 0.05), 0px 3.54787px 81px -2.6609px rgba(16, 24, 40, 0.05);
   border-radius: 16px;

@@ -18,7 +18,10 @@ const Verify = () => {
     <Why/>
     <Say/>
     <Video/>
+    <div className="w-100 px-4 px-lg-5 py-3 box">
+
     <MBA/>
+    </div>
     <CaseStudy/>
     <Faq/>
     <Footer/>
