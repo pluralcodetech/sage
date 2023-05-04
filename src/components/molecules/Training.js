@@ -59,7 +59,7 @@ const Training = () => {
             />
           </div>
             <div className="w-100 pb-3 pe-3 d-flex justify-content-end">
-              <TextLinks to="#" children={<Image src={arrow} />} />
+              <TextLinks to="/aboutus" children={<Image src={arrow} />} />
             </div>
         </div>
       </div>

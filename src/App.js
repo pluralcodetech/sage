@@ -8,6 +8,7 @@ import EachCourse from "./components/pages/EachCourse";
 import ScrolltoTop from "./components/molecules/ScrolltoTop";
 import Verify from "./components/pages/Verify";
 import Partners from "./components/pages/Partners";
+import AboutUs from "./components/pages/AboutUs";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="eachcourse" element={<EachCourse />} />
           <Route path="verify" element={<Verify />} />
           <Route path="partners" element={<Partners />} />
+          <Route path="aboutus" element={<AboutUs />} />
           <Route path="*" element={<h1 className="p-5">Page not found!</h1>} />
         </Routes>
       </ScrolltoTop>

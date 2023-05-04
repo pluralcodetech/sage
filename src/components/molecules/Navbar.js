@@ -33,7 +33,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg px-4 px-lg-5 py-4">
+      <nav className="navbar navbar-expand-lg px-4 px-lg-5 py-4 bg-white">
         <div className="navlogo">
           <Image src={logo} alt="sage" className="w-100" />
         </div>
@@ -53,12 +53,13 @@ const Navbar = () => {
         <div className="collapse navbar-collapse list-container" id="navbarNav">
           <div className="navbar-nav navlist d-flex justify-content-center gap-4">
             <TextLinks to="/" className="nav-link" children="Home" />
+            <TextLinks to="/minimba" className="nav-link" children="Sage Mini MBA" />
             <div className="d-flex align-items-center position-relative" onMouseOver={showCourseDropdown} onMouseOut={hideCourseDropdown}>
-              <TextLinks to="/test" children="Courses" className="nav-link" />
+              <TextLinks children="Courses" className="nav-link" />
               <box-icon name="chevron-down"></box-icon>
               <div className="courses-dropdown position-absolute" ref={dp}>
                 <TextLinks to="/courses" className="dpbigtext" children="Certificate Courses" />
-                <div className="row">
+                <div className="row d-none d-lg-flex">
                   <div className="col-sm-12 col-md-12 col-lg-6 p-0">
                     <ul className="">
                       <li>
@@ -140,15 +141,15 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <TextLinks to="#" className="nav-link" children="About Sage" />
+            <TextLinks to="/aboutus" className="nav-link" children="About Sage" />
             <div className="d-flex align-items-center" onMouseOver={showMore} onMouseOut={hideMore}>
-              <TextLinks to="#" children="More" className="nav-link" />
+              <TextLinks children="More" className="nav-link" />
               <box-icon name="chevron-down"></box-icon>
               <div className="more-dropdown position-absolute" ref={more}>
                       <div className="py-1">
                         <TextLinks
                           className="courses-dropdown-links"
-                          children="Verify Our Students"
+                          children="Verify Certificate"
                           to="/verify"
                         />
                       </div>

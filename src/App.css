@@ -694,8 +694,9 @@ border-radius: 24px 24px 0px 0px;
   width: 49%;
 }
 .verifytext{
+  width: 600px;;
   font-family: Gilroy-black;
-  font-size: 50px;
+  font-size: 60px;
   color: #011F5B;
 }
 .verifytext span{
@@ -704,6 +705,10 @@ border-radius: 24px 24px 0px 0px;
 .verifytext2{
   width: 400px;
   color: #4E4E4E;
+}
+.abouttext{
+  color: #4E4E4E;
+  width: 430px;
 }
 .verifyimg{
   width: 45%;
@@ -725,6 +730,74 @@ border-radius: 24px 24px 0px 0px;
   /* width: 100%; */
   color: #4E4E4E;
   font-family: Gilroy-Regular;
+}
+.culture-box{
+  width: 22%;
+  padding: 4rem 0 2.5rem 0;
+  box-shadow: 0px 0px 37px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+.culture-text{
+  font-family: Gilroy-Medium;
+  color: #232323;
+  font-size: 32px;
+  padding-top: 0.5rem;
+}
+.padculture{
+  margin: 2rem 0;
+}
+.dark-color{
+  background-color: #FFFDFA;
+}
+.impact{
+  background-color: #FFFDFA;
+  padding: 7rem 3rem;
+}
+.impact-box{
+  width: 57%;
+  position: absolute;
+  right: 0;
+  top: 18%;
+  padding: 3rem;
+}
+.impactimg{
+  width: 100%;
+}
+.impactimg img{
+  width: 50%;
+}
+.impacttext{
+  color: #011F5B;
+  font-size: 36px;
+}
+.impacttext2{
+  color: #4E4E4E;
+  font-family: Gilroy-Regular;
+}
+.impact-btn{
+  width: 134px;
+}
+.reachout{
+  width: 80%;
+  margin: auto !important;
+  padding: 5rem 0;
+}
+.reach-color{
+  color: #4E4E4E;
+}
+.reachimg{
+  width: 100%;
+}
+.reachimg img{
+  width: 100%;
+}
+.reachtext{
+  color: #011F5B;
+  font-size: 48px;
+}
+.reachcol{
+  width: 48%;
 }
 
 @media (min-width:1500px) {
@@ -749,7 +822,7 @@ border-radius: 24px 24px 0px 0px;
   .imgg{
     width: 60%;
   }
-  .who-box{margin: 0 0 3rem 0;}
+  .who-box, .culture-box{margin: 0 0 3rem 0;}
   .training h2, .cert{
     padding: 3rem 0;
   }
@@ -833,6 +906,9 @@ border-radius: 24px 24px 0px 0px;
   .verifytext{
     font-size: 60px;
   }
+  .padculture{
+    margin: 5rem 0;
+  }
   
   
 }
@@ -843,6 +919,11 @@ border-radius: 24px 24px 0px 0px;
   }
   .footlogo{
     width: 75%;
+  }
+  .dpbigtext {
+    color: #4E4E4E !important;
+    font-family: Gilroy-Regular !important;
+    font-size: 16px;
   }
   .header{
     flex-direction: column;
@@ -877,7 +958,7 @@ border-radius: 24px 24px 0px 0px;
     padding: 5px 0;
   }
   .header-logo{
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .header-btn, .header-btn2, .cert-btn{
@@ -905,7 +986,7 @@ border-radius: 24px 24px 0px 0px;
   .viewbtn{
     width:100%;
   }
-  .who-box{
+  .who-box, .culture-box{
     width: 100%;
   }
   .who-text{
@@ -1150,7 +1231,8 @@ border-radius: 24px 24px 0px 0px;
     width: 100%;
   }
   .verifytext{
-    font-size: 35px;
+    width: 100%;
+    font-size: 32px;
   }
   .verifytext2{
     width: 100%;
@@ -1171,6 +1253,40 @@ border-radius: 24px 24px 0px 0px;
   }
   .accredit-container{
     padding: 1rem 2rem;
+  }
+  .abouttext{
+    width: 100%;
+  }
+  .impact{
+  padding: 2rem ;
+  }
+  .impact-box{
+    width: 100%;
+    position: relative;
+    padding: 1.2rem;
+  }
+  .impactimg{
+    width: 100%;
+  }
+  .impactimg img{
+    width: 100%;
+  }
+  .impacttext{
+    color: #011F5B;
+    font-size: 36px;
+  }
+  .impact-btn{
+    width: 134px;
+  }
+  .reachout{
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .reachtext{
+    font-size: 30px;
+  }
+  .reachcol{
+    width: 100%;
   }
 
 }

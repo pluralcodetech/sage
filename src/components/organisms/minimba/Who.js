@@ -6,7 +6,7 @@ import pic from '../../../images/Group 24.png'
 const Who = () => {
  
   return (
-    <div className='training p-4 p-lg-5'>
+    <div className='training p-4 p-lg-5 padculture'>
       <h2 className='text-black text-center' data-aos="zoom-in-up" data-aos-duration="2000">Who is the Mini-MBA designed for?</h2>
       <div className='w-100 py-5 row gap-3 justify-content-center'>
         <div className='who-box col-sm-12 col-md-6 col-lg-3 d-flex flex-column justify-content-center align-items-center' data-aos="fade-up" data-aos-duration="2000">

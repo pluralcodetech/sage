@@ -7,6 +7,7 @@ import online from "../../images/laptop_mac.png";
 // import headerpic from "../../images/Group 17.png";
 import Button from "../atom/Button";
 import {Link} from "react-scroll";
+import TextLinks from "../atom/TextLinks";
 
 const Header = () => {
   return (
@@ -45,15 +46,15 @@ const Header = () => {
         </div>
         <div className="">
 
-        <Link to="minimba" smooth={true}>
-          <Button className="btn header-btn py-2 mt-2" children="Sage Mini Mba" />
-        </Link>
+        {/* <Link to="minimba" smooth={true}> */}
+          <TextLinks to="/minimba" children={<Button className="btn header-btn py-2 mt-2" children="Sage Mini Mba" />} />
+        {/* </Link> */}
         </div>
         <div className="py-3 ">
 
-        <Link to="courses" smooth={true}>
-          <Button className="btn header-btn2 py-2 mt-2" children="Certificate Courses" />
-        </Link>
+        {/* <Link to="courses" smooth={true}> */}
+          <TextLinks to="/courses" children={<Button className="btn header-btn2 py-2 mt-2" children="Certificate Courses" />} />
+        {/* </Link> */}
         </div>
       </div>
       <div

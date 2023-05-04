@@ -10,12 +10,12 @@ import viewD from "../../images/certd.png";
 import viewE from "../../images/certe.png";
 import viewF from "../../images/certf.png";
 import viewG from "../../images/certg.png";
-import { Element } from "react-scroll";
+// import { Element } from "react-scroll";
 
 const Certification = () => {
   return (
     <>
-      <Element id="courses" name="courses">
+      {/* <Element id="courses" name="courses"> */}
         <div className="cert">
           <h2
             className="text-center py-4 py-lg-5 text-black"
@@ -83,7 +83,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="#"
+                to="/eachcourse"
                 children="View Course"
                 className="view cert-text"
               />
@@ -104,7 +104,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="#"
+                to="/eachcourse"
                 children="View Course"
                 className="view cert-text"
               />
@@ -127,7 +127,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="#"
+                to="/eachcourse"
                 children="View Course"
                 className="view cert-text"
               />
@@ -148,7 +148,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="#"
+                to="/eachcourse"
                 children="View Course"
                 className="view cert-text"
               />
@@ -169,20 +169,20 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="#"
+                to="/eachcourse"
                 children="View Course"
                 className="view cert-text"
               />
             </div>
           </div>
           <div className="viewbtn m-auto py-4 py-xxl-5">
-            <Button
+            <TextLinks to="/courses" children={<Button
               className="w-100 d-flex justify-content-center btn cert-btn"
               children="View all courses"
-            />
+            />}/>
           </div>
         </div>
-      </Element>
+      {/* </Element> */}
     </>
   );
 };
