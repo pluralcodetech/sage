@@ -6,7 +6,7 @@ import fast from "../../images/alarm.png";
 import online from "../../images/laptop_mac.png";
 // import headerpic from "../../images/Group 17.png";
 import Button from "../atom/Button";
-import {Link} from "react-scroll";
+// import {Link} from "react-scroll";
 import TextLinks from "../atom/TextLinks";
 
 const Header = () => {
