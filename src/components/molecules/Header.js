@@ -25,21 +25,21 @@ const Header = () => {
           children="Learn cutting-edge Business, Management and Corporate skills with real world case studies and earn globally recognized certificates"
         />
         <div className="header-logo py-1">
-          <div className="d-flex gap-2">
-            <div>
-              <Image src={flex} alt="" />
+          <div className="d-flex ">
+            <div className="icons-box ">
+              <Image src={flex} alt="" className="icons" />
             </div>
             <Text className="fst-italic" children="Flexible." />
           </div>
-          <div className="d-flex gap-2">
-            <div>
-              <Image src={fast} alt="" />
+          <div className="d-flex">
+            <div className="icons-box">
+              <Image src={fast} alt="" className="icons" />
             </div>
             <Text className="fst-italic" children="Fast." />
           </div>
-          <div className="d-flex gap-2">
-            <div>
-              <Image src={online} alt="" />
+          <div className="d-flex">
+            <div className="icons-box2">
+              <Image src={online} alt="" className="icons2 pt-1" />
             </div>
             <Text className="fst-italic" children="100% Online" />
           </div>

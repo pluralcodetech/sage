@@ -24,51 +24,51 @@ const HeaderM = () => {
           children="Learn cutting-edge Business, Management and Corporate skills with real world case studies and earn globally recognized certificates"
         />
         <div className="header-logomba">
-          <div className="d-flex gap-1">
+          <div className="d-flex">
             <div>
-              <Image src={book} alt="" />
+              <Image src={book} alt="" className="w-75"/>
             </div>
             <Text
-              className="fst-italic"
+              className="fst-italic pt-1"
               children="Number of required modules:"
             />
             <Text className="fst-italic header-logomba-two" children="10" />
           </div>
-          <div className="d-flex gap-1">
+          <div className="d-flex ">
             <div>
-              <Image src={time} alt="" />
+              <Image src={time} alt="" className="w-75" />
             </div>
-            <Text className="fst-italic" children="Duration:" />
+            <Text className="fst-italic pt-1" children="Duration:" />
             <Text
               className="fst-italic header-logomba-two"
               children="30+ hours."
             />
           </div>
-          <div className="d-flex gap-1">
+          <div className="d-flex">
             <div>
-              <Image src={level} alt="" />
+              <Image src={level} alt="" className="w-75"/>
             </div>
-            <Text className="fst-italic" children="Level:" />
+            <Text className="fst-italic pt-1" children="Level:" />
             <Text
               className="fst-italic header-logomba-two"
               children="Intermediate"
             />
           </div>
-          <div className="d-flex gap-1">
+          <div className="d-flex ">
             <div>
-              <Image src={price} alt="" />
+              <Image src={price} alt="" className="w-75" />
             </div>
-            <Text className="fst-italic" children="Price:" />
+            <Text className="fst-italic pt-1" children="Price:" />
             <Text
               className="fst-italic header-logomba-two"
               children="$149.99"
             />
           </div>
-          <div className="d-flex gap-1">
+          <div className="d-flex">
             <div className="">
-              <Image src={access} alt="" />
+              <Image src={access} alt="" className="w-75" />
             </div>
-            <Text className="fst-italic" children="Access:" />
+            <Text className="fst-italic pt-1" children="Access:" />
             <Text
               className="fst-italic header-logomba-two"
               children="Unlocks automatically upon completion of required modules"

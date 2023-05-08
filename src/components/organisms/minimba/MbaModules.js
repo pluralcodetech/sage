@@ -44,27 +44,27 @@ const MbaModules = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={clock} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={clock} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="3hours (self-paced)"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={system} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
                 <Text className="moduletext m-0" children="100% online" />
               </div>
@@ -91,27 +91,27 @@ const MbaModules = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={clock} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={clock} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="3hours (self-paced)"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={system} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
                 <Text className="moduletext m-0" children="100% online" />
               </div>
@@ -125,46 +125,45 @@ const MbaModules = () => {
         >
           <div className="training-logo">
             <Image src={viewE} className="training-logo" />
-            </div>
+          </div>
           <div className="pt-3 certb">
             <h5>Business Analysis</h5>
             <Text
               children="Master and deploy Data Analytics skills into business for predictive analysis."
               className="training-text cert-text mb-1"
-              />
-              </div>
+            />
+          </div>
+          <div>
             <div>
-              <div>
-                <Image src={star} alt="" />
+              <Image src={star} alt="" />
+            </div>
+            <div>
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
+                </div>
+                <Text
+                  className="moduletext m-0"
+                  children="Courses certificate"
+                />
               </div>
-              <div>
-                <div className="d-flex gap-1">
-                  <div className="">
-                    <Image src={course} alt="" className="w-100" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="Courses certificate"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
+              </div>
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
-                </div>
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
-          
+          </div>
         </div>
         <div
           className="cert-box p-4 col-sm-12 col-md-12 col-lg-4"
@@ -180,39 +179,38 @@ const MbaModules = () => {
               children="Understand international laws, practices and skills to compete globally."
               className="training-text cert-text mb-1"
             />
-           </div>   
+          </div>
+          <div>
             <div>
-              <div>
-                <Image src={star} alt="" />
+              <Image src={star} alt="" />
+            </div>
+            <div>
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
+                </div>
+                <Text
+                  className="moduletext m-0"
+                  children="Courses certificate"
+                />
               </div>
-              <div>
-                <div className="d-flex gap-1">
-                  <div className="">
-                    <Image src={course} alt="" className="w-100" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="Courses certificate"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
+              </div>
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
-                </div>
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
-          
+          </div>
         </div>
       </div>
       <div className="row justify-content-center gap-3 pt-4 pt-xxl-5">
@@ -236,27 +234,27 @@ const MbaModules = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={clock} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="3hours (self-paced)"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={system} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
                 <Text className="moduletext m-0" children="100% online" />
               </div>
@@ -283,27 +281,27 @@ const MbaModules = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={clock} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="3hours (self-paced)"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={system} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
                 <Text className="moduletext m-0" children="100% online" />
               </div>
@@ -330,27 +328,27 @@ const MbaModules = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={clock} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="3hours (self-paced)"
                 />
               </div>
-              <div className="d-flex gap-1">
-                <div>
-                  <Image src={system} alt="" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
                 <Text className="moduletext m-0" children="100% online" />
               </div>

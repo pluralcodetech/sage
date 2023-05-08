@@ -125,12 +125,12 @@ a{
   z-index: 1;
 }
 .headerbg{
-  background: linear-gradient(300deg, rgba(1, 31, 91, 0) 0.06%, rgba(1, 31, 91, 0.64) 54.48%, rgba(1, 31, 91, 0.9) 89.5%),url('./images/Group\ 20651.png');
+  background: linear-gradient(300deg, rgba(1, 31, 91, 0) 0.06%, rgba(1, 31, 91, 0.64) 54.48%, rgba(1, 31, 91, 0.9) 89.5%),url('./images/headerbgg.png');
   background-size:cover;
   background-repeat: no-repeat;
 }
 .headerbgmini{
-  background: linear-gradient(270deg, rgba(1, 31, 91, 0) 0.02%, rgba(1, 31, 91, 0.24) 22.09%, rgba(1, 31, 91, 0.57) 47.13%, rgba(1, 31, 91, 0.9) 57.63%),url('./images/Group\ 20652.png');
+  background: linear-gradient(270deg, rgba(1, 31, 91, 0) 0.02%, rgba(1, 31, 91, 0.24) 22.09%, rgba(1, 31, 91, 0.57) 47.13%, rgba(1, 31, 91, 0.9) 57.63%),url('./images/headerbg2.png');
   background-size:cover;
   background-repeat: no-repeat;
 }
@@ -164,7 +164,8 @@ a{
 }
 .header-logomba-two{
   font-family:Gilory-regularItalic ;
-
+  padding-left: 5px;
+  padding-top: 5px;
 }
 .header-btn{
   color: #011F5B;
@@ -184,6 +185,22 @@ a{
 .header-btn2:hover{
   color: #011F5B;
   background-color: #FFFFFF;
+}
+.iconw{
+  width: 30px;
+}
+.benefit{
+  background-color: #F5F6F8;
+}
+.benefit h1{
+  color: #011F5B;
+  font-size: 48px;
+}
+.ben-list{
+  line-height: 40px;
+  font-size: 18px;
+  color: #232323;
+  font-family: Gilroy-Medium;
 }
 .second-img{
   width: 80%;
@@ -799,6 +816,24 @@ border-radius: 24px 24px 0px 0px;
 .reachcol{
   width: 48%;
 }
+.icons-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+   align-items: start;
+}
+.icons{
+  width: 50%;
+}
+.icons-box2{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+   align-items:start;
+}
+.icons2{
+  width: 60%;
+}
 
 @media (min-width:1500px) {
   .header-maintext{
@@ -963,6 +998,10 @@ border-radius: 24px 24px 0px 0px;
   }
   .header-btn, .header-btn2, .cert-btn{
     width: 100%;
+  }
+  .benefit h1{
+    color: #011F5B;
+    font-size: 28px;
   }
   .header-logomba{
     width: 100%;

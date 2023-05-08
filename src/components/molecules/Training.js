@@ -26,8 +26,8 @@ const Training = () => {
               />
            
           </div>
-            <div className="w-100 pb-3 pe-3 d-flex justify-content-end">
-              <TextLinks to="/minimba" children={<Image src={arrow} />} />
+            <div className="w-100 pb-3 d-flex justify-content-end">
+              <TextLinks to="/minimba" children={<Image src={arrow} className="w-50" />} />
             </div>
         </div>
 
@@ -42,8 +42,8 @@ const Training = () => {
               className="training-text"
             />
           </div>
-            <div className="w-100 pb-3 pe-3 d-flex justify-content-end">
-              <TextLinks to="/courses" children={<Image src={arrow} />} />
+            <div className="w-100 pb-3 d-flex justify-content-end">
+              <TextLinks to="/courses" children={<Image src={arrow} className="w-50" />} />
             </div>
         </div>
 
@@ -58,8 +58,8 @@ const Training = () => {
               className="training-text"
             />
           </div>
-            <div className="w-100 pb-3 pe-3 d-flex justify-content-end">
-              <TextLinks to="/aboutus" children={<Image src={arrow} />} />
+            <div className="w-100 pb-3 d-flex justify-content-end">
+              <TextLinks to="/aboutus" children={<Image src={arrow} className="w-50" />} />
             </div>
         </div>
       </div>

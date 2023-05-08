@@ -25,18 +25,18 @@ const Footer = () => {
             <p className="pt-4 py-2 foot-first-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim.
             </p>
-            <div className="d-flex gap-3">
-              <TextLinks>
-                <Image src={inst} />
+            <div className="d-flex">
+              <TextLinks className="d-flex justify-content-center align-items-center">
+                <Image src={inst} className="w-50" />
               </TextLinks>
-              <TextLinks>
-                <Image src={face} />
+              <TextLinks className="d-flex justify-content-center align-items-center">
+                <Image src={face} className="w-50" />
               </TextLinks>
-              <TextLinks>
-                <Image src={twit} />
+              <TextLinks className="d-flex justify-content-center align-items-center">
+                <Image src={twit} className="w-50" />
               </TextLinks>
-              <TextLinks>
-                <Image src={link} />
+              <TextLinks className="d-flex justify-content-center align-items-center">
+                <Image src={link} className="w-50" />
               </TextLinks>
             </div>
           </div>
@@ -89,28 +89,40 @@ const Footer = () => {
           </div>
           <div className="footc d-flex flex-column gap-2">
             <h5 className="">Contact</h5>
-            <div className="d-flex gap-3 align-items-center">
-              <Image src={tel} />
+            <div className="d-flex align-items-center">
+              <div className="">
+                <Image src={tel} className="w-50 " />
+              </div>
               <TextLinks to="#">+(234) 123-456-7890.</TextLinks>
             </div>
-            <div className="d-flex gap-3 align-items-center">
-              <Image src={tel} />
+            <div className="d-flex align-items-center">
+              <div>
+                <Image src={tel} className="w-50 " />
+              </div>
               <TextLinks to="#">+(234) 123-456-7890.</TextLinks>
             </div>
-            <div className="d-flex gap-3 align-items-center">
-              <Image src={twitout} />
+            <div className="d-flex align-items-center">
+              <div>
+                <Image src={twitout} className="w-50 " />
+              </div>
               <TextLinks to="#">sageinstitutehq</TextLinks>
             </div>
-            <div className="d-flex gap-3 align-items-center">
-              <Image src={inout} />
+            <div className="d-flex align-items-center">
+              <div>
+                <Image src={inout} className="w-50 " />
+              </div>
               <TextLinks to="#">sageinstitutehq</TextLinks>
             </div>
-            <div className="d-flex gap-3 align-items-center">
-              <Image src={faceout} />
+            <div className="d-flex align-items-center">
+              <div>
+                <Image src={faceout} className="w-50 " />
+              </div>
               <TextLinks to="#">sageinstitutehq</TextLinks>
             </div>
-            <div className="d-flex gap-3 align-items-center">
-              <Image src={email} />
+            <div className="d-flex align-items-center">
+              <div>
+                <Image src={email} className="w-50 " />
+              </div>
               <TextLinks to="#">support@sageinstitutehq.com</TextLinks>
             </div>
           </div>

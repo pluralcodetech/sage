@@ -51,35 +51,29 @@ const RightHeader = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <Text children="$20.99" className="moduletext m-0 no-price" />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <Text children="Free" className="m-0" />
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
           </div>
@@ -101,35 +95,29 @@ const RightHeader = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <Text children="$20.99" className="moduletext m-0 no-price" />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <Text children="Free" className="m-0" />
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
           </div>
@@ -151,35 +139,29 @@ const RightHeader = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <Text children="$20.99" className="moduletext m-0 no-price" />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <Text children="Free" className="m-0" />
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
           </div>
@@ -203,35 +185,29 @@ const RightHeader = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <Text children="$20.99" className="moduletext m-0 no-price" />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <Text children="Free" className="m-0" />
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
           </div>
@@ -253,35 +229,29 @@ const RightHeader = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <Text children="$20.99" className="moduletext m-0 no-price" />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <Text children="Free" className="m-0" />
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
           </div>
@@ -303,35 +273,29 @@ const RightHeader = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <Text children="$20.99" className="moduletext m-0 no-price" />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <Text children="Free" className="m-0" />
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
           </div>
@@ -355,35 +319,29 @@ const RightHeader = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <Text children="$20.99" className="moduletext m-0 no-price" />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <Text children="Free" className="m-0" />
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
           </div>
@@ -405,35 +363,29 @@ const RightHeader = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <Text children="$20.99" className="moduletext m-0 no-price" />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <Text children="Free" className="m-0" />
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
           </div>
@@ -455,35 +407,29 @@ const RightHeader = () => {
               <Image src={star} alt="" />
             </div>
             <div>
-              <div className="d-flex gap-1">
-                <div className="">
-                  <Image src={course} alt="" className="w-100" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center  iconw ">
+                  <Image src={course} alt="" className="w-50" />
                 </div>
                 <Text
                   className="moduletext m-0"
                   children="Courses certificate"
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={clock} alt="" />
-                  </div>
-                  <Text
-                    className="moduletext m-0"
-                    children="3hours (self-paced)"
-                  />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw" >
+                  <Image src={clock} alt="" className="w-50"/>
                 </div>
-                <Text children="$20.99" className="moduletext m-0 no-price" />
+                <Text
+                  className="moduletext m-0"
+                  children="3hours (self-paced)"
+                />
               </div>
-              <div className="d-flex justify-content-between">
-                <div className="d-flex gap-1">
-                  <div>
-                    <Image src={system} alt="" />
-                  </div>
-                  <Text className="moduletext m-0" children="100% online" />
+              <div className="d-flex">
+                <div className="d-flex align-items-center iconw">
+                  <Image src={system} alt="" className="icons2" />
                 </div>
-                <Text children="Free" className="m-0" />
+                <Text className="moduletext m-0" children="100% online" />
               </div>
             </div>
           </div>
