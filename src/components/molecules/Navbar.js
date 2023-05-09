@@ -66,35 +66,35 @@ const Navbar = () => {
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Marketing"
-                          to="#"
+                          to="/marketing"
                         />
                       </li>
                       <li>
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Product Management"
-                          to="#"
+                          to="/product_management"
                         />
                       </li>
                       <li>
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Operations Management"
-                          to="#"
+                          to="/operations_management"
                         />
                       </li>
                       <li>
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Agile Project Management"
-                          to="#"
+                          to="/agile_project_management"
                         />
                       </li>
                       <li className="">
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Business Analysis"
-                          to="#"
+                          to="/business_analysis"
                         />
                       </li>
                     </ul>
@@ -105,35 +105,35 @@ const Navbar = () => {
                         <TextLinks
                           className="courses-dropdown-links"
                           children="International Business"
-                          to="#"
+                          to="/international_business"
                         />
                       </li>
                       <li>
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Innovation & Design Thinking"
-                          to="#"
+                          to="/innovation"
                         />
                       </li>
                       <li>
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Accounting & Finance"
-                          to="#"
+                          to="/finance"
                         />
                       </li>
                       <li>
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Team Leadership"
-                          to="#"
+                          to="/team"
                         />
                       </li>
                       <li>
                         <TextLinks
                           className="courses-dropdown-links"
                           children="Growth Hacking"
-                          to="#"
+                          to="/growth"
                         />
                       </li>
                     </ul>
@@ -158,13 +158,6 @@ const Navbar = () => {
                           className="courses-dropdown-links"
                           children="Our Partners"
                           to="/partners"
-                        />
-                      </div>
-                      <div className="py-1">
-                        <TextLinks
-                          className="courses-dropdown-links"
-                          children="Contact Us"
-                          to="#"
                         />
                       </div>
                       </div>

@@ -41,7 +41,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="/eachcourse"
+                to="/marketing"
                 children="View Course"
                 className="view cert-text"
               />
@@ -62,7 +62,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="/eachcourse"
+                to="/operations_management"
                 children="View Course"
                 className="view cert-text"
               />
@@ -83,7 +83,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="/eachcourse"
+                to="/product_management"
                 children="View Course"
                 className="view cert-text"
               />
@@ -104,7 +104,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="/eachcourse"
+                to="/agile_project_management"
                 children="View Course"
                 className="view cert-text"
               />
@@ -127,7 +127,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="/eachcourse"
+                to="/business_analysis"
                 children="View Course"
                 className="view cert-text"
               />
@@ -148,7 +148,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="/eachcourse"
+                to="/international_business"
                 children="View Course"
                 className="view cert-text"
               />
@@ -169,7 +169,7 @@ const Certification = () => {
                 />
               </div>
               <TextLinks
-                to="/eachcourse"
+                to="/innovation"
                 children="View Course"
                 className="view cert-text"
               />

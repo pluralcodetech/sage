@@ -12,7 +12,7 @@ import Benefits from "../organisms/eachCourse/Benefits"
 const EachCourse = (props) => {
   return (
     <div>
-      <HeaderEchC />
+      <HeaderEchC childreneach="Operations Management"/>
       <AboutC />
       <Benefits/>
       <Video />

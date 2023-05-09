@@ -9,6 +9,15 @@ import ScrolltoTop from "./components/molecules/ScrolltoTop";
 import Verify from "./components/pages/Verify";
 import Partners from "./components/pages/Partners";
 import AboutUs from "./components/pages/AboutUs";
+import CourseMarketing from "./components/pages/CourseMarketing";
+import CourseBusiness from "./components/pages/CourseBusiness";
+import CourseInternationalBusiness from "./components/pages/CourseInternationalBusiness";
+import CourseProductM from "./components/pages/CourseProductM";
+import CourseAgilePM from "./components/pages/CourseAgilePM";
+import CourseInnovation from "./components/pages/CourseInnovation";
+import CourseFinance from "./components/pages/CourseFinance";
+import CourseTeam from "./components/pages/CourseTeam";
+import CourseGrowth from "./components/pages/CourseGrowth";
 
 function App() {
   return (
@@ -19,7 +28,16 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="minimba" element={<MiniMBA />} />
           <Route path="courses" element={<Courses />} />
-          <Route path="eachcourse" element={<EachCourse />} />
+          <Route path="operations_management" element={<EachCourse />} />
+          <Route path="marketing" element={<CourseMarketing />} />
+          <Route path="business_analysis" element={<CourseBusiness />} />
+          <Route path="international_business" element={<CourseInternationalBusiness />} />
+          <Route path="product_management" element={<CourseProductM />} />
+          <Route path="agile_project_management" element={<CourseAgilePM />} />
+          <Route path="innovation" element={<CourseInnovation />} />
+          <Route path="finance" element={<CourseFinance />} />
+          <Route path="team" element={<CourseTeam />} />
+          <Route path="growth" element={<CourseGrowth />} />
           <Route path="verify" element={<Verify />} />
           <Route path="partners" element={<Partners />} />
           <Route path="aboutus" element={<AboutUs />} />
