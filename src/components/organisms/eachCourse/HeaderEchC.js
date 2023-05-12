@@ -4,6 +4,7 @@ import Image from '../../atom/Image'
 import staryellow from '../../../images/star.png'
 import likeyellow from '../../../images/likeyellow.png'
 import Button from '../../atom/Button'
+import TextLinks from '../../atom/TextLinks'
 
 const HeaderEchC = ({childreneach}) => {
   return (
@@ -15,7 +16,7 @@ const HeaderEchC = ({childreneach}) => {
         <Image src={staryellow} /><span> 24,369 ratings </span> | <Image src={likeyellow}/><span> 67%</span>
       </div>
       <div className='mb-5'>
-        <Button className="btn cert-btn" children="Enroll" />
+        <TextLinks to="/checkout" children={<Button className="btn cert-btn" children="Enroll" />} />
       </div>
     </div>
   )

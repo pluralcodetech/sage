@@ -18,11 +18,22 @@ import CourseInnovation from "./components/pages/CourseInnovation";
 import CourseFinance from "./components/pages/CourseFinance";
 import CourseTeam from "./components/pages/CourseTeam";
 import CourseGrowth from "./components/pages/CourseGrowth";
+import CheckoutPage from "./components/pages/CheckoutPage";
+import { useLocation } from "react-router-dom";
+import CheckoutNav from "./components/molecules/CheckoutNav";
+
 
 function App() {
+  const location = useLocation();
+        let navbar = <Navbar />;   // default navbar
+        if (location.pathname.includes('/checkout')) {
+          navbar = <CheckoutNav />;
+        }
   return (
     <div>
-      <Navbar />
+      
+      {navbar}
+
       <ScrolltoTop>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -41,6 +52,7 @@ function App() {
           <Route path="verify" element={<Verify />} />
           <Route path="partners" element={<Partners />} />
           <Route path="aboutus" element={<AboutUs />} />
+          <Route path="checkout" element={<CheckoutPage />} />
           <Route path="*" element={<h1 className="p-5">Page not found!</h1>} />
         </Routes>
       </ScrolltoTop>

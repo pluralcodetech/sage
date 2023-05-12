@@ -5,7 +5,7 @@ import CaseStudy from "../molecules/CaseStudy";
 import Faq from "../molecules/Faq";
 import Footer from "../molecules/Footer";
 
-const Courses = (props) => {
+const Courses = () => {
   return (
     <>
       <HeaderC />

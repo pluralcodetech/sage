@@ -5,12 +5,12 @@ import RightHeader from './RightHeader'
 const HeaderC = () => {
   return (
     <div className='row p-4 p-lg-5 headerc'>
-      <div className='col-sm-12 col-md-12 col-lg-3 p-0'>
+      <div className='col-sm-12 col-md-12 col-lg-3 p-0 leftfilterr'>
 
-      <LeftHeader />
+      <LeftHeader  />
       </div>
       <div className='col p-0'>
-        <RightHeader />
+        <RightHeader/>
       </div>
     </div>
   )

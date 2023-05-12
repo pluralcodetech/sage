@@ -87,6 +87,12 @@ a{
 .red{
   color: #9B0000;
 }
+.lightcol{
+  color: #232323;
+}
+.lightercol{
+  color: #939393;
+}
 .courses-dropdown{
   width: 600px;
   top:100%;
@@ -834,6 +840,46 @@ border-radius: 24px 24px 0px 0px;
 .icons2{
   width: 60%;
 }
+.checkout-nav{
+
+  background: rgb(243, 243, 250);
+}
+.checkout{
+  background: rgb(243, 243, 250);
+}
+.checkout-inp{
+  border: 1.31429px solid rgba(34, 32, 87, 0.28);
+  background: inherit
+}
+.checkout-head{
+  color: #011F5B;
+  font-size: 22px;
+}
+.checkimg{
+  width: 80px;
+}
+.payimg{
+  width: 410px;
+}
+.hcol{
+  width: 3px;
+  height: 35px;
+  background: rgb(1, 31, 91, 0.1);
+
+}
+.chkk{
+  width: 25px;
+}
+.hr-check{
+  margin: 0;
+}
+.oprice{
+  font-family: Gilroy-Regular;
+}
+.secondfil{
+  display: none;
+}
+
 
 @media (min-width:1500px) {
   .header-maintext{
@@ -1031,9 +1077,7 @@ border-radius: 24px 24px 0px 0px;
   .who-text{
     width: 100%;
   }
-  .play{
-    width: 15%;
-  }
+  
   .list-container{
     width: 100%;
     flex-direction: column;
@@ -1071,6 +1115,9 @@ border-radius: 24px 24px 0px 0px;
   }
   .say-comment{
     width: 100%;
+  }
+  .play{
+    width: 15%;
   }
   .wrapper{
     width: 100%;
@@ -1326,6 +1373,22 @@ border-radius: 24px 24px 0px 0px;
   }
   .reachcol{
     width: 100%;
+  }
+  .checkout-head{
+    color: #011F5B;
+    font-size: 20px;
+  }
+  .checkimg{
+    width: 80px;
+  }
+  .payimg{
+    width: 100%;
+  }
+  .leftfilterr{
+    display: none;
+  }
+  .secondfil{
+    display: block;
   }
 
 }

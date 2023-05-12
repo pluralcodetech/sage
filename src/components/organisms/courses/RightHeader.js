@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import Search from "../../molecules/Search";
 import Text from "../../atom/Text";
 import TextLinks from "../../atom/TextLinks";
@@ -17,23 +17,74 @@ import courseg from "../../../images/courseg.png";
 import courseh from "../../../images/courseh.png";
 import coursei from "../../../images/coursei.png";
 import Pagination from "../../molecules/Pagination";
+import Button from "../../atom/Button";
+import searchi from "../../../images/searchi.png"
+import filterlist from "../../../images/viewfilter.png"
+import Filter from "./Filter";
 
 const RightHeader = () => {
+  const [search, setSearch] = useState(false)
+  const [list, setList] = useState(false)
+
+  const searchbar = useRef()
+
+  const handleSearch=()=>{
+    setSearch(!search)
+  }
+  const handleList=()=>{
+    setList(!list)
+  }
   return (
     <>
       <div className="row align-items-center">
-        <div className="col-sm-12 col-md-12 col-lg-6 p-0">
+        <div className="col-sm-12 col-md-12 col-lg-6 p-0 d-flex align-items-center justify-content-between">
+          <div>
+
           <h5>24,659 Available Courses</h5>
+          </div>
+          <div className="filicon d-lg-none">
+            <Button className="btn" onClick={handleSearch} children={<Image className="w-75" src={searchi}/>}/>
+            <Button className="btn" onClick={handleList} children={<Image className="w-75" src={filterlist}/>}/>
+          </div>
         </div>
-        <div className="col-sm-12 col-md-12 col-lg-6 p-0">
+        {search &&<div className="col-sm-12 col-md-12 col-lg-6 p-0 searchright" ref={searchbar}>
           <Search
             inputtype="text"
             searchplaceholder="What do you want to learn"
             inputclass="col rounded-start srchinp form-control"
             className="row"
           />
+        </div>}
+      </div>
+      {list && <div className='pt-3 secondfil' >
+      
+      <h5 className='text-center pb-4'>Filter by</h5>
+      <div className='py-3'>
+        <Filter h5="Subject" p1="Operation Management" p2="Operation Management" p3="Operation Management" p4="Operation Management" p5="Operation Management" />
+        <div className='text-center see-course'>
+        <TextLinks to="#" children="See more" className="txt" />
         </div>
       </div>
+      <div className='py-2'>
+        <Filter h5="Skills" p1="Management" p2="Analytics" p3="Marketing" p4="Leadership" p5="Operation" />
+        <div className='text-center see-course'>
+        <TextLinks to="#" children="See more" className="txt" />
+        </div>
+      </div>
+      <div className='py-2'>
+        <Filter h5="Level" p1="Beginner" p2="Intermediate" p3="Advanced" p4="Mixed" fifth='d-none' />
+        <div className='text-center see-course'>
+        <TextLinks to="#" children="See more" className="txt" />
+        </div>
+      </div>
+      <div className='py-2'>
+        <Filter h5="Duration" p1="Less than 2 hours" p2="1-4 weeks" p3="1-3 months" p4="3-6 months" fifth='d-none'/>
+        <div className='text-center see-course'>
+        <TextLinks to="#" children="See more" className="txt" />
+        </div>
+      </div>
+    </div>
+}
       <div className="row gap-4 pt-5 pb-4 justify-content-end">
         <div
           className="cert-box-course p-4 col-sm-12 col-md-12 col-lg-4 "
@@ -77,7 +128,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks to="/eachcourse" children="View Course" className="view"/>
+          <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
         <div
           className="cert-box-course p-4 col-sm-12 col-md-12 col-lg-4"
@@ -121,7 +172,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks children="View Course" className="view"/>
+          <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
         <div
           className="cert-box-course p-4 col-sm-12 col-md-12 col-lg-4"
@@ -165,7 +216,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks children="View Course" className="view"/>
+          <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
       </div>
       <div className="row gap-4 pb-4 justify-content-end">
@@ -211,7 +262,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks children="View Course" className="view"/>
+          <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
         <div
           className="cert-box-course p-4 col-sm-12 col-md-12 col-lg-4"
@@ -255,7 +306,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks children="View Course" className="view"/>
+          <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
         <div
           className="cert-box-course p-4 col-sm-12 col-md-12 col-lg-4"
@@ -299,7 +350,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks children="View Course" className="view"/>
+          <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
       </div>
       <div className="row gap-4 pb-4 justify-content-end">
@@ -345,7 +396,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks children="View Course" className="view"/>
+          <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
         <div
           className="cert-box-course p-4 col-sm-12 col-md-12 col-lg-4"
@@ -389,7 +440,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks children="View Course" className="view"/>
+          <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
         <div
           className="cert-box-course p-4 col-sm-12 col-md-12 col-lg-4"
@@ -433,7 +484,7 @@ const RightHeader = () => {
               </div>
             </div>
           </div>
-          <TextLinks children="View Course" className="view"/>
+          <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
       </div>
       <div className="d-flex justify-content-center justify-content-lg-end">
