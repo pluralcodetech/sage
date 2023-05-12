@@ -56,7 +56,7 @@ const Checkout = () => {
             </div>
 
             <p className="lightcol py-2">
-              <span className="red">Note:</span> Ensure the your Full Name
+              <span className="red">Note:</span> Ensure your Full Name
               matches what will appear on your certificate at the end of the
               course.{" "}
             </p>

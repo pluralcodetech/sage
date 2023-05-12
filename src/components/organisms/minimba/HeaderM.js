@@ -8,6 +8,7 @@ import price from "../../../images/Vector (2).png";
 import access from "../../../images/Vector (3).png";
 // import headerpic from "../../../images/Group 20646.png";
 import Button from "../../atom/Button";
+import TextLinks from "../../atom/TextLinks";
 
 
 const HeaderM = () => {
@@ -77,7 +78,7 @@ const HeaderM = () => {
         </div>
         <div className="pb-lg-5 ">
 
-        <Button className="btn header-btn py-2 mt-2" children="Enroll Now" />
+        <TextLinks to="/checkout" children={<Button className="btn header-btn py-2 mt-2" children="Enroll Now" />} />
         </div>
       </div>
       <div 
