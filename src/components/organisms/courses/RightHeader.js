@@ -42,7 +42,7 @@ const RightHeader = () => {
 
           <h5>24,659 Available Courses</h5>
           </div>
-          <div className="filicon d-lg-none">
+          <div className="filicon d-lg-none d-flex">
             <Button className="btn" onClick={handleSearch} children={<Image className="w-75" src={searchi}/>}/>
             <Button className="btn" onClick={handleList} children={<Image className="w-75" src={filterlist}/>}/>
           </div>
