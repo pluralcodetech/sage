@@ -12,6 +12,7 @@ import star from "../../../images/star.png";
 import course from "../../../images/course.png";
 import clock from "../../../images/clock.png";
 import system from "../../../images/system.png";
+import TextLinks from "../../atom/TextLinks";
 
 const MbaModules = () => {
   return (
@@ -30,7 +31,7 @@ const MbaModules = () => {
           data-aos-duration="2000"
         >
           <div className="training-logo">
-            <Image src={viewA} className="training-logo" />
+            <TextLinks to="/marketing" children={<Image src={viewA} className="training-logo" />} />
           </div>
           <div className="pt-3 certb">
             <h5>Marketing</h5>
@@ -77,7 +78,7 @@ const MbaModules = () => {
           data-aos-duration="2000"
         >
           <div className="training-logo">
-            <Image src={viewB} className="training-logo" />
+            <TextLinks to="/operations_management" children={<Image src={viewB} className="training-logo" />}/>
           </div>
           <div className="pt-3 certb">
             <h5>Operations Management </h5>
@@ -124,7 +125,7 @@ const MbaModules = () => {
           data-aos-duration="2000"
         >
           <div className="training-logo">
-            <Image src={viewE} className="training-logo" />
+            <TextLinks to="/business_analysis" children={<Image src={viewE} className="training-logo" />} />
           </div>
           <div className="pt-3 certb">
             <h5>Business Analysis</h5>
@@ -171,7 +172,7 @@ const MbaModules = () => {
           data-aos-duration="2000"
         >
           <div className="training-logo">
-            <Image src={viewF} className="training-logo" />
+            <TextLinks to="/international_business" children={<Image src={viewF} className="training-logo" />} />
           </div>
           <div className="pt-3 certb">
             <h5>International Business</h5>
@@ -220,7 +221,7 @@ const MbaModules = () => {
           data-aos-duration="2000"
         >
           <div className="training-logo">
-            <Image src={viewC} className="training-logo" />
+            <TextLinks to="/product_management" children={<Image src={viewC} className="training-logo" />} />
           </div>
           <div className="pt-3 certb">
             <h5>Product Management </h5>
@@ -267,7 +268,7 @@ const MbaModules = () => {
           data-aos-duration="2000"
         >
           <div className="training-logo">
-            <Image src={viewD} className="training-logo" />
+            <TextLinks to="/agile_project_management" children={<Image src={viewD} className="training-logo" />}/>
           </div>
           <div className="pt-3 certb">
             <h5>Agile Project Management</h5>
@@ -314,7 +315,7 @@ const MbaModules = () => {
           data-aos-duration="2000"
         >
           <div className="training-logo">
-            <Image src={viewG} className="training-logo" />
+            <TextLinks to="/innovation" children={<Image src={viewG} className="training-logo" />} />
           </div>
           <div className="pt-3 certb">
             <h5>Innovation & Design Thinking</h5>

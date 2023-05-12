@@ -47,6 +47,14 @@ const RightHeader = () => {
             <Button className="btn" onClick={handleList} children={<Image className="w-75" src={filterlist}/>}/>
           </div>
         </div>
+        <div className="col-sm-12 col-md-12 col-lg-6 p-0 d-none d-lg-block" ref={searchbar}>
+          <Search
+            inputtype="text"
+            searchplaceholder="What do you want to learn"
+            inputclass="col rounded-start srchinp form-control"
+            className="row"
+          />
+        </div>
         {search &&<div className="col-sm-12 col-md-12 col-lg-6 p-0 searchright" ref={searchbar}>
           <Search
             inputtype="text"
