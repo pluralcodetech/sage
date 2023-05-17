@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+// import { useEffect } from "react";
 import Navbar from "./components/molecules/Navbar";
 import Home from "./components/pages/Home";
 import MiniMBA from "./components/pages/MiniMBA";
@@ -29,6 +30,15 @@ function App() {
         if (location.pathname.includes('/checkout')) {
           navbar = <CheckoutNav />;
         }
+        // useEffect(()=>{
+        //   const closeNav=(e)=>{
+        //     if (!navref.current.contains(e.target)){
+        //       navref.current.style.display="none"
+        //     }
+        //   }
+        //   document.addEventListener("click",closeNav)
+        //   return ()=> document.removeEventListener("click",closeNav)
+        // },[])
   return (
     <div>
       

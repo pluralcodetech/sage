@@ -21,7 +21,7 @@ const CourseGrowth = () => {
         <Box />
       </div>
       <Say />
-      <CaseStudy />
+      <CaseStudy newCase="#fff" pbCase="4rem"/>
       <Footer />
     </div>
   )

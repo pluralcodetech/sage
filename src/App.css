@@ -50,6 +50,16 @@ body{
   width: 70%;
   display: flex;
 }
+
+
+
+
+/* .notshow{
+  display: none !important;
+}
+.show{
+  display: block !important;
+} */
 .navlist a{
   text-decoration: none;
   color: #232323;
@@ -103,6 +113,7 @@ a{
   border-radius: 16px;
   z-index: 1;
 }
+
 .courses-dropdown-links{
   color: #4E4E4E;
   font-family: Gilroy-Regular;
@@ -213,7 +224,8 @@ a{
 }
 .training{
   width: 100%;
-  background: rgb(1, 31, 91, 0.04);
+  background: rgba(1, 31, 91, 0.04);
+  background: #011f5b1a;
 }
 .training h5{
   color: #232323;
@@ -1001,6 +1013,12 @@ border-radius: 24px 24px 0px 0px;
   .footlogo{
     width: 75%;
   }
+  .aa{
+    width: fit-content;
+  }
+  .mm{
+    margin-bottom: 0 !important;
+  }
   .dpbigtext {
     color: #4E4E4E !important;
     font-family: Gilroy-Regular !important;
@@ -1008,6 +1026,12 @@ border-radius: 24px 24px 0px 0px;
   }
   .header{
     flex-direction: column;
+  }
+  .noShow {
+    display: none !important;
+  }
+  .show{
+    display: block !important;
   }
   
   .headerbg{
@@ -1333,7 +1357,6 @@ border-radius: 24px 24px 0px 0px;
   .more-dropdown{
     width: 90%;
     top:79%;
-    display: none;
     padding: 1rem;
     z-index: 1;
   }

@@ -32,11 +32,11 @@ const Checkout = () => {
             </div>
             <div>
               <label className="lightcol py-2">Country</label>
-              <Input
+              <select 
                 className="form-control lightercol px-4 py-2 checkout-inp"
-                type="text"
                 placeholder="Select your country"
-              />
+                ></select>
+              
             </div>
             <div>
               <label className="lightcol py-2">Phone Number</label>
@@ -66,8 +66,8 @@ const Checkout = () => {
           <Text className="checkout-head" children="Summary" />
           <div className="oprice">
             <div className="d-flex justify-content-between">
-              <Text className="" children="Original Price:" />
-              <Text className="" children="N13,500" />
+              <Text className="" children="Cost Price:" />
+              <Text className="" children="Free" />
             </div>
             <hr className="hr-check" />
           </div>

@@ -7,9 +7,10 @@ import TextLinks from "../atom/TextLinks";
 import "boxicons";
 import { useRef } from "react";
 import { useState } from "react";
-import Text from "../atom/Text";
-import chk1 from '../../images/chk1.png'
-import chk2 from '../../images/Frame 60974.png'
+// import Text from "../atom/Text";
+// import chk1 from '../../images/chk1.png'
+// import chk2 from '../../images/Frame 60974.png'
+import Button from '../atom/Button';
 
 const CheckoutNav = () => {
     const dp = useRef();
@@ -188,7 +189,7 @@ const CheckoutNav = () => {
               </div>
             </div>
           </div>
-          <div className="navbtn-container d-flex gap-2 my-2 my-lg-0 align-items-center">
+          {/* <div className="navbtn-container d-flex gap-2 my-2 my-lg-0 align-items-center">
             <div>
               <Image className="chkk" src={chk1} />
             </div>
@@ -198,6 +199,10 @@ const CheckoutNav = () => {
               <Text className="m-0" children="AdebayoUi" />
               <box-icon name="chevron-down"></box-icon>
             </div>
+          </div> */}
+          <div className="navbtn-container d-flex gap-2 my-2 my-lg-0">
+            <Button children="Login" className="btn px-4 logBtn " />
+            <Button children="Sign up" className="btn px-4 signBtn " />
           </div>
         </div>
       </nav>

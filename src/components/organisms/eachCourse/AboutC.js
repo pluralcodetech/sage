@@ -8,7 +8,7 @@ import abtimgB from '../../../images/Frame 60999 (1).png'
 const AboutC = () => {
   return (
     <div className='px-4 px-lg-5 py-4 py-lg-5 abtC'>
-      <h2 className='text-center py-lg-5 text-black'>About Courses</h2>
+      <h2 className='d-none d-lg-block text-center py-lg-5 text-black'>About Courses</h2>
       <div className='row align-items-center'>
         <div className='col-sm-12 col-md-12 col-lg-6 p-0'>
             <Text className="abtC-textone" children="About this course" />

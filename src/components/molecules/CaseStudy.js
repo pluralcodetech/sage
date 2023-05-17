@@ -16,7 +16,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 
-const CaseStudy = () => {
+const CaseStudy = ({newCase, pbCase}) => {
   const { ref, inView } = useInView({
     threshold: 0.05,
   });
@@ -48,7 +48,7 @@ const CaseStudy = () => {
     }
   }, [inView,anima])
   return (
-    <div className="training p-4 p-lg-5">
+    <div className="training p-4 p-lg-5" style={{backgroundColor: newCase, marginBottom: pbCase}}>
       <h2 className="text-center text-black" data-aos="zoom-in-up" data-aos-duration="2000">Real-World Case Studies</h2>
       <Text
         className="case-text m-auto text-justify text-lg-center"

@@ -96,7 +96,7 @@ const Carousell = () => {
       {list.map((eachlist, idx) => {
         return (
           <>
-            <div className="row ms-4" key={idx}>
+            <div className="row ms-4 gap-5 gap-lg-0" key={idx}>
               <div className="saylogo p-0 col-sm-12 col-md-12 col-lg-6 ">
                 <Image src={eachlist.img} alt="" className="saylogoimg" />
               </div>
