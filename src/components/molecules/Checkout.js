@@ -4,9 +4,32 @@ import Input from "../atom/Input";
 import TextLinks from "../atom/TextLinks";
 import Button from "../atom/Button";
 import Image from "../atom/Image";
-import checkimg from '../../images/coursea.png'
+import checkimg from "../../images/coursea.png";
+import { useState } from "react";
+import countries from "i18n-iso-countries";
+// Import the languages you want to use
+import enLocale from "i18n-iso-countries/langs/en.json";
 
 const Checkout = () => {
+  const [selectedCountry, setSelectedCountry] = useState("");
+
+  const selectCountryHandler = (value) => setSelectedCountry(value);
+
+  // Have to register the languages you want to use
+  countries.registerLocale(enLocale);
+
+  // Returns an object not a list
+  const countryObj = countries.getNames("en", { select: "official" });
+
+  const countryArr = Object.entries(countryObj).map(([key, value]) => {
+    return {
+      label: value,
+      value: key,
+    };
+  });
+
+  const [currency, setCurrency] = useState(true)
+  
   return (
     <div className="p-3 p-lg-5">
       <h2>Checkout</h2>
@@ -32,11 +55,23 @@ const Checkout = () => {
             </div>
             <div>
               <label className="lightcol py-2">Country</label>
-              <select 
+              <select
                 className="form-control lightercol px-4 py-2 checkout-inp"
-                placeholder="Select your country"
-                ></select>
-              
+                value={selectedCountry}
+                onChange={(e) =>{ 
+                  if (e.target.value !== "NG"){
+                    setCurrency(false)
+                  }else{setCurrency(true)}
+                  selectCountryHandler(e.target.value)
+                }}
+              >
+                {!!countryArr?.length &&
+                  countryArr.map(({ label, value }) => (
+                    <option key={value} value={value}>
+                      {label}
+                    </option>
+                  ))}
+              </select>
             </div>
             <div>
               <label className="lightcol py-2">Phone Number</label>
@@ -56,9 +91,8 @@ const Checkout = () => {
             </div>
 
             <p className="lightcol py-2">
-              <span className="red">Note:</span> Ensure your Full Name
-              matches what will appear on your certificate at the end of the
-              course.{" "}
+              <span className="red">Note:</span> Ensure your Full Name matches
+              what will appear on your certificate at the end of the course.{" "}
             </p>
           </form>
         </div>
@@ -74,20 +108,29 @@ const Checkout = () => {
           <div>
             <div className="d-flex justify-content-between pt-4">
               <Text className="" children="Total Price:" />
-              <Text className="" children="N13,500" />
+              {currency ?<Text className="" children="N13,500"/> :
+              <Text className="" children="$100" />}
             </div>
             <hr className="hr-check" />
           </div>
           <Text className="checkout-head pt-4" children="Order details" />
           <div className="d-flex align-items-center justify-content-between ">
             <div className="d-flex gap-2 align-items-center payimg">
-
-            <div><Image className="checkimg" src={checkimg}/></div>
-            <Text className="" children="Operations Management: Important of management and guide to understanding the process."/>
+              <div>
+                <Image className="checkimg" src={checkimg} />
+              </div>
+              <Text
+                className=""
+                children="Operations Management: Important of management and guide to understanding the process."
+              />
             </div>
-          <Text className="oprice" children="N13,500"/>
+            <Text className="oprice" children="N13,500" />
           </div>
-          <TextLinks to="#" className="d-flex justify-content-center pt-4" children={<Button className="btn cert-btn" children="Pay now"/>}/>
+          <TextLinks
+            to="#"
+            className="d-flex justify-content-center pt-4"
+            children={<Button className="btn cert-btn" children="Pay now" />}
+          />
         </div>
       </div>
     </div>

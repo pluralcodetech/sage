@@ -20,16 +20,16 @@ import CourseFinance from "./components/pages/CourseFinance";
 import CourseTeam from "./components/pages/CourseTeam";
 import CourseGrowth from "./components/pages/CourseGrowth";
 import CheckoutPage from "./components/pages/CheckoutPage";
-import { useLocation } from "react-router-dom";
-import CheckoutNav from "./components/molecules/CheckoutNav";
+// import { useLocation } from "react-router-dom";
+// import CheckoutNav from "./components/molecules/CheckoutNav";
 
 
 function App() {
-  const location = useLocation();
-        let navbar = <Navbar />;   // default navbar
-        if (location.pathname.includes('/checkout')) {
-          navbar = <CheckoutNav />;
-        }
+  // const location = useLocation();
+  //       let navbar = <Navbar />;   // default navbar
+  //       if (location.pathname.includes('/checkout')) {
+  //         navbar = <CheckoutNav />;
+  //       }
         // useEffect(()=>{
         //   const closeNav=(e)=>{
         //     if (!navref.current.contains(e.target)){
@@ -42,7 +42,7 @@ function App() {
   return (
     <div>
       
-      {navbar}
+      <Navbar />
 
       <ScrolltoTop>
         <Routes>

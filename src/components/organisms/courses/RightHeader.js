@@ -1,21 +1,21 @@
 import React, { useState, useRef } from "react";
 import Search from "../../molecules/Search";
-import Text from "../../atom/Text";
+// import Text from "../../atom/Text";
 import TextLinks from "../../atom/TextLinks";
-import star from "../../../images/star.png";
-import course from "../../../images/course.png";
-import clock from "../../../images/clock.png";
-import system from "../../../images/system.png";
+// import star from "../../../images/star.png";
+// import course from "../../../images/course.png";
+// import clock from "../../../images/clock.png";
+// import system from "../../../images/system.png";
 import Image from "../../atom/Image";
-import coursea from "../../../images/coursea.png";
-import courseb from "../../../images/courseb.png";
-import coursec from "../../../images/coursec.png";
-import coursed from "../../../images/coursed.png";
-import coursee from "../../../images/coursee.png";
-import coursef from "../../../images/coursef.png";
-import courseg from "../../../images/courseg.png";
-import courseh from "../../../images/courseh.png";
-import coursei from "../../../images/coursei.png";
+// import coursea from "../../../images/coursea.png";
+// import courseb from "../../../images/courseb.png";
+// import coursec from "../../../images/coursec.png";
+// import coursed from "../../../images/coursed.png";
+// import coursee from "../../../images/coursee.png";
+// import coursef from "../../../images/coursef.png";
+// import courseg from "../../../images/courseg.png";
+// import courseh from "../../../images/courseh.png";
+// import coursei from "../../../images/coursei.png";
 import Pagination from "../../molecules/Pagination";
 import Button from "../../atom/Button";
 import searchi from "../../../images/searchi.png"
@@ -93,7 +93,7 @@ const RightHeader = () => {
       </div>
     </div>
 }
-      <div className="row gap-4 pt-5 pb-4 justify-content-end">
+      {/* <div className="row gap-4 pt-5 pb-4 justify-content-end">
         <div
           className="cert-box-course p-4 col-sm-12 col-md-12 col-lg-4 "
           data-aos="fade-up"
@@ -494,10 +494,10 @@ const RightHeader = () => {
           </div>
           <TextLinks to="/operations_management" children="View Course" className="view"/>
         </div>
-      </div>
-      <div className="d-flex justify-content-center justify-content-lg-end">
+      </div> */}
+      {/* <div className="d-flex justify-content-center justify-content-lg-end"> */}
         <Pagination/>
-      </div>
+      {/* </div> */}
     </>
   );
 };
