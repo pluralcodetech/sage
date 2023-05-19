@@ -279,7 +279,7 @@ font-family: 'Gilroy-Regular';
   font-size: 13.5px;
 }
 .certb{
-  height: 70px;
+  height: 100%;
 }
 .certbb{
   height: 100%;
@@ -562,6 +562,9 @@ border-radius: 24px 24px 0px 0px;
 }
 .txt{
   color: #9B0000;
+}
+.certbc{
+  height: 60px;
 }
 .cert-box-course{
   width: 30%;

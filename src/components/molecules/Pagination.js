@@ -40,7 +40,7 @@ setData(CourseList)
    <div className="training-logo">
      <Image src={eachtitle.img} className="training-logo" />
    </div>
-   <div className="pt-3 certb">
+   <div className="pt-3 certbc">
      <h5>{eachtitle.title}</h5>
    </div>
    <div className=''>
