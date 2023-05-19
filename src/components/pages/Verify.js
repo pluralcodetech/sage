@@ -8,12 +8,13 @@ import HeaderV from "../organisms/verify/HeaderV";
 // import CaseStudy from "../molecules/CaseStudy";
 // import Faq from "../molecules/Faq";
 import Footer from "../molecules/Footer";
+import ViewCert from "../organisms/verify/ViewCert";
 
 const Verify = () => {
   return (
     <>
       <HeaderV />
-      
+      <ViewCert/>
       <Footer />
     </>
   );

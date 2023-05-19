@@ -7,7 +7,7 @@ import Button from "../../atom/Button";
 
 const Impact = () => {
   return (
-    <div className="impact">
+    <div className="impact ver">
       <div className="row align-items-center position-relative gap-4">
         <div className="col-sm-12 col-md-12 col-lg-6 impactimg p-0">
           <Image className="" src={impactimg} />

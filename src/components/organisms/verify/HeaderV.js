@@ -6,7 +6,7 @@ import verifyimg from "../../../images/verifyimg.png"
 
 const HeaderV = () => {
   return (
-    <div className='row dark-color p-4 p-lg-5 gap-3 justify-content-between align-items-center'>
+    <div className='row ver p-4 p-lg-5 gap-3 justify-content-between align-items-center'>
       <div className='col-sm-12 col-md-12 col-lg-6 p-0 verifyrow' data-aos="zoom-in-up" data-aos-duration="2000">
         <h2 className='verifytext'>Verify <span>Our Student</span> Credentials</h2>
         <Text className="verifytext2 py-2 py-xxl-0" children="Verify certificates issued by Sage, kindly enter the certificate number below to validate its authenticity." />

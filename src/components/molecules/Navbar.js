@@ -63,7 +63,7 @@ const Navbar = () => {
           {/* <span className="navbar-toggler-icon"></span> */}
         </div>
         <div className={`list-container ${open ? "show" : "noShow"}`} >
-          <div className="navbar-nav navlist d-flex justify-content-center gap-4">
+          <div className="navbar-nav navlist d-flex justify-content-center gap-4 py-3">
             <TextLinks to="/" className="nav-link aa" children="Home" />
             <TextLinks
               to="/minimba"
@@ -200,8 +200,8 @@ const Navbar = () => {
             </div>
           </div>
           <div className="navbtn-container d-flex gap-2 my-2 my-lg-0">
-            <Button children="Login" className="btn px-4 logBtn " />
-            <Button children="Sign up" className="btn px-4 signBtn " />
+            <Button children="Login" className="btn px-4 signBtn " />
+            {/* <Button children="Sign up" className="btn px-4 signBtn " /> */}
           </div>
         </div>
       </nav>

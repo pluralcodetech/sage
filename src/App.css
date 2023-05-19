@@ -802,8 +802,11 @@ border-radius: 24px 24px 0px 0px;
 .dark-color{
   background-color: #FFFDFA;
 }
+.colord{
+  color: #232323;
+}
 .impact{
-  background-color: #FFFDFA;
+  /* background-color: #FFFDFA; */
   padding: 7rem 3rem;
 }
 .impact-box{
@@ -907,6 +910,54 @@ border-radius: 24px 24px 0px 0px;
 }
 .secondfil{
   display: none;
+}
+.ver{
+  background: rgb(1, 31, 91,0.03);
+}
+.viewc-head{
+  color: #011F5B;
+  font-family: Gilroy-bold;
+  font-size: 30px;
+}
+.verimg{
+  width: 100px;
+}
+.stdver{
+  font-size: 22px;
+  color: #323232;
+  text-align: center;
+  padding: 3rem 5rem;
+}
+.vercert-body{
+  background: #FAFAFC;
+box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+}
+.vercert-img{
+  width: 200px;
+}
+.sign{
+  width: 50%
+}
+.crest{
+  opacity: 0.1;
+}
+.vercourse{
+  color: #9B0000;
+  font-family: Gilroy-bold;
+  font-size: 30px;
+}
+.vert1{
+  width: 50%;
+  margin: auto;
+}
+
+.vert2{
+  width: 70%;
+  margin: auto;
+  font-family: Gilroy-medium;
+}
+.verth{
+  font-family: Gilroy-black;
 }
 
 
@@ -1018,6 +1069,9 @@ border-radius: 24px 24px 0px 0px;
   }
   .padculture{
     margin: 5rem 0;
+  }
+  .stdver{
+    padding: 2rem 8rem;
   }
   
   
@@ -1429,6 +1483,20 @@ border-radius: 24px 24px 0px 0px;
   }
   .secondfil{
     display: block;
+  }
+  .vercourse{
+    color: #9B0000;
+    font-family: Gilroy-bold;
+    font-size: 30px;
+  }
+  .vert1{
+    width: 100%;
+  }
+  .vert2{
+    width: 100%;
+  }
+  .stdver{
+    padding: 1rem;
   }
 
 }
