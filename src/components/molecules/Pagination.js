@@ -35,8 +35,6 @@ setData(CourseList)
  <div
  key={eachtitle.id}
    className="cert-box-course p-3 col-sm-12 col-md-12 col-lg-4"
-   data-aos="fade-up"
-   data-aos-duration="2000"
  >
    <div className="training-logo">
      <Image src={eachtitle.img} className="training-logo" />
