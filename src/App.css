@@ -1490,18 +1490,34 @@ box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
   .vercourse{
     color: #9B0000;
     font-family: Gilroy-bold;
-    font-size: 30px;
+    font-size: 20px;
   }
-  .vert1{
+  .vertt1{
     width: 100%;
+    font-size: 14px;
+  }
+  .vertt1{
+    font-size: 12px;
   }
   .vert2{
     width: 100%;
+    font-size: 10px;
   }
   .stdver{
     padding: 1rem;
   }
-
+  .crestbox{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .crest{
+    width: 90%;
+  }
+  .vercert-img{
+    width: 55%;
+  }
 }
 
 @media (min-width:280px) and (max-width:280px) {
@@ -1513,5 +1529,23 @@ box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
     width: 100%;
     margin: auto;
   }
+  
+  .vercourse{
+    font-size: 16px;
+  }
+  .vert1{
+    width: 100%;
+    font-size: 10px;
+  }
+  .vertt1{
+    font-size: 8px;
+  }
+  .vert2{
+    font-size: 6px;
+  }
+  .verth{
+    font-size: 12px;
+  }
+  
   
 }

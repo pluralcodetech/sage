@@ -29,21 +29,21 @@ const ViewCert = () => {
               children="Has Successfully completed the"
             />
             <Text
-              className="colord pb-3 "
+              className="colord pb-3 vertt1"
               children="SAGE INSTITUTE OF BUSINESS & MANAGMENT Program."
             />
             <Text className="vercourse" children="OPERATION MANAGEMENT" />
             <Text className="colord vert2 pt-3 pb-5" children="This certificate program introduces quantitative methods used to manage operations and make better management decisions." />
             </div>
-            <div className="d-flex justify-content-between py-5">
+            <div className="d-flex justify-content-between py-lg-5">
                 <div className="">
 
-            <Text className="" children="From 24th of March to 17 to May, 2023" />
+            <Text className="vertt1 mb-0 mb-lg-4" children="From 24th of March to 17 to May, 2023" />
             <Image className="sign" src={sign}/>
-            <Text className="fs-5 my-0 verth" children="Head of Academy" />
-            <Text className="text-black" children="Cyril Okeleke" />
+            <Text className="my-0 verth" children="Head of Academy" />
+            <Text className="text-black vertt1" children="Cyril Okeleke" />
                 </div>
-                <div className=" ">
+                <div className="crestbox">
                     <Image className="crest" src={crest}/>
                 </div>
             </div>

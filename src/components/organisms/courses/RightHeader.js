@@ -25,6 +25,7 @@ import Filter from "./Filter";
 const RightHeader = () => {
   const [search, setSearch] = useState(false)
   const [list, setList] = useState(false)
+  const [clen, setClen] = useState()
 
   const searchbar = useRef()
 
@@ -34,13 +35,15 @@ const RightHeader = () => {
   const handleList=()=>{
     setList(!list)
   }
+  
+ 
   return (
     <>
       <div className="row align-items-center">
         <div className="col-sm-12 col-md-12 col-lg-6 p-0 d-flex align-items-center justify-content-between">
           <div>
 
-          <h5>24,659 Available Courses</h5>
+          <h5>{clen} Available Courses</h5>
           </div>
           <div className="filicon d-lg-none d-flex">
             <Button className="btn" onClick={handleSearch} children={<Image className="w-75" src={searchi}/>}/>
@@ -496,7 +499,7 @@ const RightHeader = () => {
         </div>
       </div> */}
       {/* <div className="d-flex justify-content-center justify-content-lg-end"> */}
-        <Pagination/>
+        <Pagination setClen={setClen} />
       {/* </div> */}
     </>
   );

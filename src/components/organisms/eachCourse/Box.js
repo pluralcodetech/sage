@@ -4,6 +4,7 @@ import  Button  from '../../atom/Button'
 import Image from '../../atom/Image'
 import likewhite from '../../../images/likewhite.png'
 import starwhite from '../../../images/Frame 60964.png'
+import TextLinks from '../../atom/TextLinks'
 
 const Box = () => {
   return (
@@ -18,7 +19,7 @@ const Box = () => {
       </div>
     </div>
     <div className='col-sm-12 col-md-12 col-lg-5 p-0 d-flex align-items-center justify-content-end'>
-        <Button className="btn cert-btn" children="Enroll" />
+        <TextLinks to="/checkout" children={<Button className="btn cert-btn" children="Enroll" />} />
     </div>
     </div>
   )

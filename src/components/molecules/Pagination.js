@@ -13,7 +13,7 @@ import Image from "../atom/Image";
 
 
 
-const Pagination = () => {
+const Pagination = ({setClen}) => {
  const [data, setData] = useState([]);
  const [currentPage,setCurrentPage] = useState(1);
  const [postPerPage] = useState(9)
@@ -27,9 +27,10 @@ setData(CourseList)
 
  const lastPostIndex = currentPage * postPerPage;
  const firstPostIndex = lastPostIndex - postPerPage;
+ setClen(data.length)
  const currentPosts = data.map(list=>{
     return list}).slice(firstPostIndex,lastPostIndex)
- console.log(currentPosts)
+//  console.log(currentPosts)
  const each = currentPosts.map(eachtitle=> 
  <div
  key={eachtitle.id}

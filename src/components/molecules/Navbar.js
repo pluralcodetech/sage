@@ -6,6 +6,7 @@ import closeicon from "../../images/icon.png";
 import TextLinks from "../atom/TextLinks";
 import "boxicons";
 import Button from "../atom/Button";
+import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { useState} from "react";
 
@@ -47,7 +48,7 @@ const Navbar = () => {
     <>
       <nav className="navbar sticky-top navbar-expand-lg px-4 px-lg-5 py-4 bg-white" ref={menuref}>
         <div className="navlogo">
-          <Image src={logo} alt="sage" className="w-100" />
+          <Link to="/"><Image src={logo} alt="sage" className="w-100" /></Link>
         </div>
           
         <div
