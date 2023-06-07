@@ -18,7 +18,7 @@ const CourseGrowth = () => {
       <Video />
       <Learn />
       <div className="px-4 px-lg-5 py-2">
-        <Box />
+        <Box boxtitle="Growth Hacking"/>
       </div>
       <Say />
       <CaseStudy newCase="#fff" pbCase="4rem"/>
