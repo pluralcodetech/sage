@@ -11,7 +11,7 @@ const Box = () => {
     <div className='box-each row'>
 
     <div className='col-sm-12 col-md-12 col-lg-7 p-0'>
-        <h2 className='fs-1'>Operations Management</h2>
+        <h2 className='box-tt'>Operations Management</h2>
       <Text className="box-eachtxt" children="Lorem ipsum dolor sit amet consectetur. Tellus nullam et mauris diam et lobortis tincidunt neque arcu. Aliquam eu adipiscing massa posuere pulvinar nulla tortor. " />
       <p className="eachtime pt-3 mb-0" >Duration:<span> 3hours</span> |<span> Beginner Level</span> | <span>100% Online</span></p>
       <div className='eachtime2 py-2 pb-3'>
@@ -19,7 +19,7 @@ const Box = () => {
       </div>
     </div>
     <div className='col-sm-12 col-md-12 col-lg-5 p-0 d-flex align-items-center justify-content-end'>
-        <TextLinks to="/checkout" children={<Button className="btn cert-btn" children="Enroll" />} />
+        <TextLinks to="/checkout" className="w-100" children={<Button className="btn cert-btn" children="Enroll" />} />
     </div>
     </div>
   )

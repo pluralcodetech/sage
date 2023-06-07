@@ -745,6 +745,9 @@ border-radius: 24px 24px 0px 0px;
   width: 600px;
   font-family: Gilroy-Regular;
 }
+.box-tt{
+  font-size: 40px;
+}
 .verifyrow{
   width: 49%;
 }
@@ -1413,8 +1416,11 @@ box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
   .box-each{
     background-color: #011F5B;
     color: #FFFFFF;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 24px;
+  }
+  .box-tt{
+    font-size: 22px;
   }
   .box-eachtxt{
     width: 100%;
