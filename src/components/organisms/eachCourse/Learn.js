@@ -9,8 +9,8 @@ const Learn = () => {
         <h2 className='text-black text-center py-lg-5'>What You Will Learn</h2>
       <div className='row gap-3 pt-3 py-lg-3 justify-content-between'>
         <div className='col-sm-12 col-md-12 col-lg-6 learnone d-flex gap-3'>
-            <div>
-                <Image src={group1} />
+            <div className='learnimg-w'>
+                <Image src={group1} className="w-100"/>
             </div>
             <div>
 
@@ -27,8 +27,8 @@ const Learn = () => {
             </div>
         </div>
         <div className='col-sm-12 col-md-12 col-lg-6 learntwo d-flex gap-3'>
-        <div>
-                <Image src={group2} />
+        <div className='learnimg-w'>
+                <Image src={group2} className="w-100"/>
             </div>
             <div>
 
@@ -44,8 +44,8 @@ const Learn = () => {
       </div>
       <div className='row gap-3 pt-3 py-lg-3 justify-content-between'>
         <div className='col-sm-12 col-md-12 col-lg-6 learntwo week3 d-flex gap-3'>
-            <div>
-                <Image src={group1} />
+            <div className='learnimg-w'>
+                <Image src={group1} className="w-100" />
             </div>
             <div>
 
@@ -63,8 +63,8 @@ const Learn = () => {
             </div>
         </div>
         <div className='col-sm-12 col-md-12 col-lg-6 learnone week4 d-flex gap-3'>
-        <div>
-                <Image src={group2} />
+        <div className='learnimg-w'>
+                <Image src={group2} className="w-100" />
             </div>
             <div>
 
@@ -80,8 +80,8 @@ const Learn = () => {
       </div>
       <div className='row gap-3 pt-3 py-lg-3 justify-content-between'>
         <div className='col-sm-12 col-md-12 col-lg-6 learnone d-flex gap-3'>
-            <div>
-                <Image src={group1} />
+            <div className='learnimg-w'>
+                <Image src={group1} className="w-100" />
             </div>
             <div>
 
@@ -95,8 +95,8 @@ const Learn = () => {
             </div>
         </div>
         <div className='col-sm-12 col-md-12 col-lg-6 learntwo d-flex gap-3'>
-        <div>
-                <Image src={group2} />
+        <div className='learnimg-w'>
+                <Image src={group2} className="w-100" />
             </div>
             <div>
 

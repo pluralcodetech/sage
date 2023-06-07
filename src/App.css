@@ -1390,11 +1390,19 @@ box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
   
   .learnone{
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  .learnone h3, .learntwo h3{
+    font-size: 18px;
   }
   .learntwo{
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  .learnimg-w{
+    width: 40px;
   }
   .week3{
     background-color:#FFE9E9;
