@@ -1,6 +1,6 @@
 import React from 'react'
 import Filter from './Filter'
-import TextLinks from '../../atom/TextLinks'
+// import TextLinks from '../../atom/TextLinks'
 
 const LeftHeader = () => {
   return (
