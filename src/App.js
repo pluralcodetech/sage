@@ -51,7 +51,7 @@ function App() {
           <Route path="courses" element={<Courses />} />
           <Route path="operations_management" element={<EachCourse />} />
           <Route path="marketing" element={<CourseMarketing />} />
-          <Route path="business_analysis" element={<CourseBusiness />} />
+          <Route path="business_analytics" element={<CourseBusiness />} />
           <Route path="international_business" element={<CourseInternationalBusiness />} />
           <Route path="product_management" element={<CourseProductM />} />
           <Route path="agile_project_management" element={<CourseAgilePM />} />

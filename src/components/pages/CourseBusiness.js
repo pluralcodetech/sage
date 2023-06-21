@@ -12,13 +12,13 @@ import Footer from '../molecules/Footer'
 const CourseBusiness = () => {
   return (
     <div>
-      <HeaderEchC childreneach="Business Analysis"/>
+      <HeaderEchC childreneach="Business Analytics"/>
       <AboutC />
       <Benefits/>
       <Video />
       <Learn />
       <div className="px-4 px-lg-5 py-2">
-        <Box boxtitle="Business Analysis"/>
+        <Box boxtitle="Business Analytics"/>
       </div>
       <Say />
       <CaseStudy newCase="#fff" pbCase="4rem"/>

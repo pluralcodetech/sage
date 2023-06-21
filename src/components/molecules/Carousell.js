@@ -93,10 +93,10 @@ const Carousell = () => {
       swipeable
       width="100%"
     >
-      {list.map((eachlist, idx) => {
+      {list.map((eachlist) => {
         return (
           <>
-            <div className="row ms-4 gap-5 gap-lg-0" key={idx}>
+            <div className="row ms-4 gap-5 gap-lg-0" key={eachlist.id}>
               <div className="saylogo p-0 col-sm-12 col-md-12 col-lg-6 ">
                 <Image src={eachlist.img} alt="" className="saylogoimg" />
               </div>

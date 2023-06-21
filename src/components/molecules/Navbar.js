@@ -120,8 +120,8 @@ const Navbar = () => {
                       <li className="">
                         <TextLinks
                           className="courses-dropdown-links"
-                          children="Business Analysis"
-                          to="/business_analysis"
+                          children="Business Analytics"
+                          to="/business_analytics"
                         />
                       </li>
                     </ul>
