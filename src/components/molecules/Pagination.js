@@ -28,7 +28,7 @@ const Pagination = ({ setClen }) => {
     //     .then(response=>response.json())
     //     .then(data=>setData(data))
     setData(cc);
-  }, [data]);
+  }, [cc]);
 
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
@@ -46,6 +46,7 @@ const Pagination = ({ setClen }) => {
         
         return n
       }
+      return null
       
     })
     .slice(firstPostIndex, lastPostIndex);
