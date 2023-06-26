@@ -45,7 +45,7 @@ const CourseList =[
         link:"/growth",
         level:"Beginner",
         duration:"1 month",
-        subject:""
+        subject:"Operation Management"
     },
     {
         id:5,
@@ -54,7 +54,7 @@ const CourseList =[
         link:"/innovation",
         level:"Beginner",
         duration:"1 month",
-        subject:""
+        subject:"Operation Management"
 
     },
     {
@@ -64,7 +64,7 @@ const CourseList =[
         link:"./international_business",
         level:"Beginner",
         duration:"1-4 weeks",
-        subject:""
+        subject:"Operation Management"
     },
     {
         id:7,

@@ -71,7 +71,7 @@ const RightHeader = () => {
       
       <h5 className='text-center pb-4'>Filter by</h5>
       <div className='py-3'>
-        <Filter h5="Subject" p1="Operation Management" p2="Operation Management" p3="Operation Management" p4="Operation Management" p5="Operation Management" />
+        <Filter h5="Subject" p1="Operation Management" p2="Product Management" p3="Marketing" p4="Growth Hacking" p5="Team Leadership" />
         <div className='text-center see-course'>
         <TextLinks to="#" children="See more" className="txt" />
         </div>

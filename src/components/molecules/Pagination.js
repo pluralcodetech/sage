@@ -38,19 +38,20 @@ const Pagination = ({ setClen }) => {
       
       return list;
     }).filter(n=>{
-      if(n.subject.includes(getName) || n.title.includes(getName) || n.level.includes(getName) || n.duration.includes(getName)){
-      
+      for (let a of getName){
+      if(n.subject.includes(a) || n.title.includes(a) || n.level.includes(a) || n.duration.includes(a)){
         return n
-      } 
-      if (getName === ""){
-        
+      }} 
+      if (getName.length ===0){
+       
         return n
       }
       return null
       
+      
     })
     .slice(firstPostIndex, lastPostIndex);
-  //  console.log(currentPosts)
+    
   const each = currentPosts.map((eachtitle) => (
     <div
       key={eachtitle.id}
@@ -90,7 +91,8 @@ const Pagination = ({ setClen }) => {
       <TextLinks to={eachtitle.link} children="View Course" className="view" />
     </div>
   ));
-  const pageCount = Math.ceil(data.length / postPerPage);
+
+  const pageCount = Math.ceil((currentPosts.length + 1) / postPerPage);
   const handlePageClick = (event) => {
     const newOffset = event.selected + 1;
     setCurrentPage(newOffset);
