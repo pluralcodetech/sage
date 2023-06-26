@@ -3,7 +3,7 @@ import Input from "../../atom/Input";
 
 const Filter = ({ h5, p1, p2, p3, p4, p5, fifth="d-flex gap-2", idp1, idp2, idp3, idp4, idp5 }) => {
 
-  const [check,setCheck] = useState(true)
+  const [check] = useState(true)
 
   const courseArr= []
   
