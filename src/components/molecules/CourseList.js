@@ -11,31 +11,28 @@ import coursei from "../../images/coursei.png";
 const CourseList =[
     {
         id:1,
-        title:"Agile Project Manangement",
-        img:coursea,
-        link:"/agile_project_management",
-        level:"Advanced",
-        duration:"2 months",
-        subject:"Operation Management"
-    },
-    {
-        id:2,
-        title:"Business Analytics",
-        img:courseb,
-        link:"/business_analytics",
-        level:"Beginner",
-        duration:"1 month",
-        subject:"Operation Management"
-
-    },
-    {
-        id:3,
         title:"Accounting & Finance",
         img:coursec,
         link:"/finance",
-        level:"Beginner",
-        duration:"1 month",
-        subject:"Operation Management"
+        level:"Certificate Courses",
+        skills:["Analytics"],
+        
+    },
+    {
+        id:2,
+        title:"Agile Project Management",
+        img:coursea,
+        link:"/agile_project_management",
+        level:"Mini MBA Courses",
+        skills:["Management"],
+    },
+    {
+        id:3,
+        title:"Business Analytics",
+        img:courseb,
+        link:"/business_analytics",
+        level:"Mini MBA Courses",
+        skills:["Analytics"],
 
     },
     {
@@ -43,18 +40,16 @@ const CourseList =[
         title:"Growth Hacking",
         img:coursed,
         link:"/growth",
-        level:"Beginner",
-        duration:"1 month",
-        subject:"Operation Management"
+        level:"Certificate Courses",
+        skills:["Marketing"],
     },
     {
         id:5,
         title:"Innovation & Design Thinking",
         img:coursee,
         link:"/innovation",
-        level:"Beginner",
-        duration:"1 month",
-        subject:"Operation Management"
+        level:"Mini MBA Courses",
+        skills:["Leadership"],
 
     },
     {
@@ -62,45 +57,40 @@ const CourseList =[
         title:"International Business",
         img:coursef,
         link:"./international_business",
-        level:"Beginner",
-        duration:"1-4 weeks",
-        subject:"Operation Management"
+        level:"Mini MBA Courses",
+        skills:["Analytics"],
     },
     {
         id:7,
         title:"Marketing",
         img:courseg,
         link:"./marketing",
-        level:"Intermediate",
-        duration:"1-3 months",
-        subject:""
+        level:"Mini MBA Courses",
+        skills:["Marketing"],
     },
     {
         id:8,
         title:"Product Management",
         img:courseh,
         link:"/product_management",
-        level:"Beginner",
-        duration:"1-3 months",
-        subject:"Operation Management"
+        level:"Mini MBA Courses",
+        skills:["Management"],
     },
     {
         id:9,
         title:"Operations Management",
         img:coursei,
         link:"/operations_management",
-        level:"Advanced",
-        duration:"3-6 months",
-        subject:""
+        level:"Mini MBA Courses",
+        skills:["Operations","Management"],
     },
     {
         id:10,
         title:"Team Leadership",
         img:coursed,
         link:"/team",
-        level:"Mixed",
-        duration:"Less than 2 hours",
-        subject:""
+        level:"Certificate Courses",
+        skills:["Leadership"],
     }
 ]
 export default CourseList

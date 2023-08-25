@@ -24,9 +24,6 @@ const Pagination = ({ setClen }) => {
 
 
   useEffect(() => {
-    //     fetch("https://jsonplaceholder.typicode.com/albums")
-    //     .then(response=>response.json())
-    //     .then(data=>setData(data))
     setData(cc);
   }, [cc]);
 
@@ -39,9 +36,11 @@ const Pagination = ({ setClen }) => {
       return list;
     }).filter(n=>{
       for (let a of getName){
-      if(n.subject.includes(a) || n.title.includes(a) || n.level.includes(a) || n.duration.includes(a)){
+      if(n.title.includes(a) && n.skills[0] === a && n.level !== a ){
         return n
-      }} 
+      }
+      
+    } 
       if (getName.length ===0){
        
         return n
@@ -51,7 +50,7 @@ const Pagination = ({ setClen }) => {
       
     })
     .slice(firstPostIndex, lastPostIndex);
-    
+    console.log(currentPosts)
   const each = currentPosts.map((eachtitle) => (
     <div
       key={eachtitle.id}
@@ -92,7 +91,7 @@ const Pagination = ({ setClen }) => {
     </div>
   ));
 
-  const pageCount = Math.ceil((currentPosts.length + 1) / postPerPage);
+  const pageCount = Math.ceil((currentPosts.length +1 ) / postPerPage);
   const handlePageClick = (event) => {
     const newOffset = event.selected + 1;
     setCurrentPage(newOffset);

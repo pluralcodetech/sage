@@ -25,6 +25,7 @@
   src: url(./font/Gilroy-Regular.ttf);
 }
 
+
 .row{
   margin: 0 !important;
 }
@@ -1500,6 +1501,10 @@ box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
     display: none;
   }
   .secondfil{
+    display: none;
+  }
+  .secondfil.hide{
+    padding-top: 1rem;
     display: block;
   }
   .vercourse{

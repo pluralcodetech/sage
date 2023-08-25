@@ -125,10 +125,10 @@ const MbaModules = () => {
           data-aos-duration="2000"
         >
           <div className="training-logo">
-            <TextLinks to="/business_analysis" children={<Image src={viewE} className="training-logo" />} />
+            <TextLinks to="/business_analytics" children={<Image src={viewE} className="training-logo" />} />
           </div>
           <div className="pt-3 certb">
-            <h5>Business Analysis</h5>
+            <h5>Business Analytics</h5>
             <Text
               children="Master and deploy Data Analytics skills into business for predictive analysis."
               className="training-text cert-text mb-1"

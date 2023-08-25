@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Input from "../../atom/Input";
 
-const Filter = ({ h5, p1, p2, p3, p4, p5, fifth="d-flex gap-2", idp1, idp2, idp3, idp4, idp5 }) => {
+const Filter = ({ h5, p1, p2, p3, p4, p5,p6, p7, p8, p9, p10, fifth="d-flex gap-2", fifth1="d-flex gap-2", fifth2="d-flex gap-2", fifth3="d-flex gap-2" }) => {
 
   const [check] = useState(true)
 
@@ -14,8 +14,8 @@ const Filter = ({ h5, p1, p2, p3, p4, p5, fifth="d-flex gap-2", idp1, idp2, idp3
     <div className="leftfilter">
       <h5 className="">{h5}</h5>
       <div className="d-flex gap-2">
-        <label className="check my-2" htmlFor={idp1}>
-          <Input type="checkbox" id="chk1" value={check} onChange={(e)=>{
+        <label className="check my-2" >
+          <Input type="checkbox"  value={check} onChange={(e)=>{
            
             if(e.target.checked){
               console.log("checked")
@@ -34,7 +34,7 @@ const Filter = ({ h5, p1, p2, p3, p4, p5, fifth="d-flex gap-2", idp1, idp2, idp3
       </div>
       <div className="d-flex gap-2">
         <label className="check my-2">
-          <Input type="checkbox" id="chk2" value={check} onChange={(e)=>{
+          <Input type="checkbox" value={check} onChange={(e)=>{
             
             if(e.target.checked){
               // courseArr.pop()
@@ -46,9 +46,9 @@ const Filter = ({ h5, p1, p2, p3, p4, p5, fifth="d-flex gap-2", idp1, idp2, idp3
         </label>
         <p className="m-1">{p2}</p>
       </div>
-      <div className="d-flex gap-2">
+      <div className={fifth}>
         <label className="check my-2">
-          <Input type="checkbox" id="chk3" value={check} onChange={(e)=>{
+          <Input type="checkbox"  value={check} onChange={(e)=>{
             if(e.target.checked === true){
               courseArr.push(p3)
               localStorage.setItem("checkb",JSON.stringify(courseArr))
@@ -58,9 +58,9 @@ const Filter = ({ h5, p1, p2, p3, p4, p5, fifth="d-flex gap-2", idp1, idp2, idp3
         </label>
         <p className="m-1">{p3}</p>
       </div>
-      <div className="d-flex gap-2">
+      <div className={fifth1}>
         <label className="check my-2">
-          <Input type="checkbox" id="chk4" value={check} onChange={(e)=>{
+          <Input type="checkbox" value={check} onChange={(e)=>{
             if(e.target.checked === true){
               // courseArr.pop()
               courseArr.push(p4)
@@ -71,7 +71,7 @@ const Filter = ({ h5, p1, p2, p3, p4, p5, fifth="d-flex gap-2", idp1, idp2, idp3
         </label>
         <p className="m-1">{p4}</p>
       </div>
-      <div className={fifth} >
+      <div className={fifth2} >
         <label className="check my-2 ">
           <Input type="checkbox" id="chk5" value={check} onChange={(e)=>{
             if(e.target.checked === true){
@@ -84,6 +84,76 @@ const Filter = ({ h5, p1, p2, p3, p4, p5, fifth="d-flex gap-2", idp1, idp2, idp3
           }} className="position-absolute chk" />
         </label>
         <p className="m-1">{p5}</p>
+      </div>
+      <div className={fifth3} >
+        <label className="check my-2 ">
+          <Input type="checkbox" value={check} onChange={(e)=>{
+            if(e.target.checked === true){
+              // courseArr.pop()
+              courseArr.push(p6)
+              localStorage.setItem("checkb",JSON.stringify(courseArr))
+            }
+
+
+          }} className="position-absolute chk" />
+        </label>
+        <p className="m-1">{p6}</p>
+      </div>
+      <div className={fifth3} >
+        <label className="check my-2 ">
+          <Input type="checkbox"  value={check} onChange={(e)=>{
+            if(e.target.checked === true){
+              // courseArr.pop()
+              courseArr.push(p7)
+              localStorage.setItem("checkb",JSON.stringify(courseArr))
+            }
+
+
+          }} className="position-absolute chk" />
+        </label>
+        <p className="m-1">{p7}</p>
+      </div>
+      <div className={fifth3} >
+        <label className="check my-2 ">
+          <Input type="checkbox"  value={check} onChange={(e)=>{
+            if(e.target.checked === true){
+              // courseArr.pop()
+              courseArr.push(p8)
+              localStorage.setItem("checkb",JSON.stringify(courseArr))
+            }
+
+
+          }} className="position-absolute chk" />
+        </label>
+        <p className="m-1">{p8}</p>
+      </div>
+      <div className={fifth3} >
+        <label className="check my-2 ">
+          <Input type="checkbox"  value={check} onChange={(e)=>{
+            if(e.target.checked === true){
+              // courseArr.pop()
+              courseArr.push(p9)
+              localStorage.setItem("checkb",JSON.stringify(courseArr))
+            }
+
+
+          }} className="position-absolute chk" />
+        </label>
+        <p className="m-1">{p9}</p>
+      </div>
+      <div className={fifth3} >
+        <label className="check my-2 ">
+          <Input type="checkbox" value={check} onChange={(e)=>{
+            if(e.target.checked === true){
+              // courseArr.pop()
+              courseArr.push(p10)
+              localStorage.setItem("checkb",JSON.stringify(courseArr))
+            }
+
+
+          }} className="position-absolute chk" />
+        </label>
+        <p className="m-1">{p10}</p>
       </div>
       
     </div>
